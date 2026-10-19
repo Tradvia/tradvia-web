@@ -127,7 +127,7 @@
   <p class="text-sm font-semibold uppercase tracking-wider text-cyan-400" data-i18n="int.kicker"></p>
   <h2 class="mt-2 text-3xl font-bold text-white" data-i18n="int.title"></h2>
   <p class="mt-3 max-w-2xl text-slate-400" data-i18n="int.lead"></p>
-  <ul id="tools" class="mt-8 grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"></ul>
+  <div id="tools" class="mt-8 space-y-8"></div>
 </section>
 
 <section id="roadmap" class="border-t border-white/5 max-w-6xl mx-auto px-4 py-20">
@@ -177,11 +177,11 @@ const I18N = {
   en: {
     "ea.title":"Early access is on its way","ea.body":"Tradvia is still in its first versions. As soon as they are available, a sign-up form will open right here so you can request access.","ea.follow":"In the meantime, you can follow the development on GitHub.","ea.close":"Got it","ea.github":"Follow on GitHub",
     "meta.title":"Tradvia — Open-Core AgentOps & Hybrid Execution Control Plane",
-    "meta.desc":"Tradvia: early-stage open-core control plane that orchestrates humans, multi-model APIs and isolated container sessions on an executable hybrid Kanban, with real-time Token FinOps.",
+    "meta.desc":"Tradvia: early-stage open-core platform for hybrid work between humans and autonomous agents — an executable Kanban with human approval gates, cost per card, and a growing ecosystem of AI vendors, coding agents and repositories.",
     "nav.preview":"Preview","nav.arch":"Architecture","nav.int":"Integrations","nav.roadmap":"Roadmap","nav.runs":"Live runs",
     "hero.badge":"Open-Core AgentOps & Hybrid Execution Control Plane","hero.stage":"Early stage · building in public",
-    "hero.title":"Orchestrate Humans, Multi-Model APIs, and Isolated Container Sessions in a Single Control Plane.",
-    "hero.lead":"Tradvia removes the coordination friction between project management and autonomous execution. Move beyond isolated chat prompts: dispatch tasks on a hybrid Kanban, route workloads across multi-vendor API pools and stateful browser/CLI containers, track every token and compute second with real-time FinOps, and hand control back and forth between AI agents and human engineers without losing context.",
+    "hero.title":"Humans and autonomous agents working together, in one control plane.",
+    "hero.lead":"Tradvia is a platform for managing hybrid work between people and autonomous agents. It abstracts the infrastructure so you can focus on how smoothly work gets done: lower cost, sharper focus and less operational risk. Today: an executable Kanban with human approval in the flow, agents that plan and open pull requests, and cost per card. In progress: multi-account token routing, native MCP and plugins, skill, context and project-memory management, and spec-driven development.",
     "hero.cta1":"View on GitHub","hero.cta2":"Get early access",
     "prev.kicker":"Interactive concept preview","prev.title":"The executable hybrid board",
     "prev.note":"Illustrative mock-up with simulated data. Today v0.1 ships the API runtime, the card state machine and approval gates in chat; session workers, the account pool and live takeover are planned.",
@@ -205,10 +205,19 @@ const I18N = {
     "p2.t":"Multi-Account Pool & Token FinOps","p2.d":"Pool accounts across vendors, spread load within each account's RPM/TPM quota, fall back across vendors when one is saturated or down, and enforce per-card budget circuit breakers. Today: cost recorded on every card.",
     "p3.t":"Executable Kanban & Live Takeover","p3.d":"Every card is a durable state machine. Pause on Slack/WhatsApp approval gates, or jump into a running browser or terminal session to unblock an agent and hand control back. Today: state machine and approval in chat.",
     "p4.t":"Zero-Trust MicroVM Sandboxes","p4.d":"Isolate every execution and authenticated session in ephemeral Firecracker MicroVMs, backed by PostgreSQL Row-Level Security and encrypted credential and session vaults.",
-    "p5.t":"Native MCP & AST GraphRAG","p5.d":"Connect universal MCP servers and cut token usage with AST-based codebase indexing and episodic knowledge distillation that compounds over time.",
+    "p5.t":"MCP, Skills & Context Engineering","p5.d":"Plug in any MCP server and plugin, manage reusable agent skills, and keep each project's context and memory (specs, decisions, AST code index, episodic distillation) so agents start informed and spend fewer tokens over time. Spec-driven flows turn a written spec into planned, reviewable cards.",
     "p6.t":"Open-Core Scalability","p6.d":"Self-host /core with Docker Compose, or scale with /ee and Cloud SaaS: shared team session pools, RBAC and enterprise FinOps governance. Today: the /core + /ee monorepo, licenses and CI.",
-    "int.kicker":"Integrations","int.title":"Bring the work from where it already lives",
-    "int.lead":"Connectors sync cards and statuses from the project tools your team already uses into Tradvia's state machine. They all share one interface, which makes each connector a good first contribution.",
+    "int.shipped":"In use",
+    "int.partial":"Partial",
+    "int.g.ai":"AI model vendors",
+    "int.g.agents":"Coding agents & vibe-coding tools",
+    "int.g.repo":"Code repositories",
+    "int.g.orch":"Orchestrators & automation",
+    "int.g.pm":"Project management",
+    "int.g.chat":"Chat & approvals",
+    "int.g.proto":"Protocols & extensions",
+    "int.kicker":"Integrations","int.title":"Works with the AI ecosystem you already use",
+    "int.lead":"Tradvia sits between your people, your AI vendors and coding agents, your repositories and your project tools. Each connector shares one interface, so every item below is also a good first contribution. Statuses are real.",
     "int.planned":"Planned",
     "rm.title":"Roadmap","rm.done":"done","rm.prog":"in progress","rm.plan":"planned",
     "rm.0t":"Phase 0 — Foundation","rm.0d":"Open-core monorepo (/core FSL, /ee commercial), CLA, CI and the card state-machine contract.",
@@ -221,11 +230,11 @@ const I18N = {
   "pt-BR": {
     "ea.title":"O acesso antecipado está chegando","ea.body":"A Tradvia ainda está nas primeiras versões. Assim que elas estiverem disponíveis, um formulário de cadastro será aberto aqui mesmo para você solicitar acesso.","ea.follow":"Enquanto isso, acompanhe o desenvolvimento no GitHub.","ea.close":"Entendi","ea.github":"Acompanhar no GitHub",
     "meta.title":"Tradvia — Plataforma Open-Core de AgentOps & Orquestração Híbrida",
-    "meta.desc":"Tradvia: plano de controle open core em estágio inicial que orquestra humanos, APIs multimodelo e sessões isoladas em container em um Kanban híbrido executável, com Token FinOps em tempo real.",
+    "meta.desc":"Tradvia: plataforma open core em estágio inicial para o trabalho híbrido entre humanos e agentes autônomos — Kanban executável com aprovação humana, custo por card e um ecossistema crescente de fabricantes de IA, agentes de código e repositórios.",
     "nav.preview":"Prévia","nav.arch":"Arquitetura","nav.int":"Integrações","nav.roadmap":"Roadmap","nav.runs":"Execuções",
     "hero.badge":"Plataforma Open-Core de AgentOps & Orquestração Híbrida","hero.stage":"Estágio inicial · construído em público",
-    "hero.title":"Orquestre Humanos, APIs Multimodelo e Sessões Isoladas em Container em um Único Plano de Controle.",
-    "hero.lead":"A Tradvia elimina o atrito entre a gestão de projetos e a execução autônoma. Vá além de prompts isolados: distribua tarefas em um Kanban híbrido, roteie cargas de trabalho entre pools de APIs de vários fabricantes e sessões autenticadas de navegador/CLI, acompanhe cada token e segundo de computação com FinOps em tempo real e alterne o controle entre agentes de IA e especialistas humanos sem perder contexto.",
+    "hero.title":"Humanos e agentes autônomos trabalhando juntos, em um só plano de controle.",
+    "hero.lead":"O Tradvia é uma plataforma de gestão híbrida das ações de pessoas e agentes autônomos. Ele abstrai a infraestrutura para você focar na fluidez da execução: mais economia, mais objetividade e menos risco operacional. Hoje: Kanban executável com aprovação humana no fluxo, agentes que planejam e abrem pull requests, e custo por card. Em construção: roteamento multi-contas de tokens, suporte nativo a MCP e plugins, gestão de skills, de contexto e de memória de projeto, e desenvolvimento orientado a especificação (spec-driven).",
     "hero.cta1":"Ver no GitHub","hero.cta2":"Quero acesso antecipado",
     "prev.kicker":"Prévia interativa do conceito","prev.title":"O quadro híbrido executável",
     "prev.note":"Protótipo ilustrativo com dados simulados. Hoje a v0.1 entrega o runtime de APIs, a máquina de estado dos cards e as aprovações no chat; os workers de sessão, o pool de contas e o live takeover estão planejados.",
@@ -249,10 +258,19 @@ const I18N = {
     "p2.t":"Pool Multicontas & Token FinOps","p2.d":"Reúna contas de vários fabricantes, distribua a carga dentro da cota de RPM/TPM de cada conta, faça fallback entre fabricantes quando um estiver saturado ou fora do ar e aplique circuit breakers de orçamento por card. Hoje: custo registrado em cada card.",
     "p3.t":"Kanban Executável & Live Takeover","p3.d":"Cada card é uma máquina de estado durável. Pause fluxos para aprovação via Slack/WhatsApp ou assuma ao vivo o navegador ou o terminal do container para destravar o agente e devolver o controle. Hoje: máquina de estado e aprovação no chat.",
     "p4.t":"Sandboxes Zero-Trust em MicroVMs","p4.d":"Isole cada execução e sessão autenticada em Firecracker MicroVMs efêmeras, protegidas por PostgreSQL Row-Level Security e cofres criptografados de credenciais e sessões.",
-    "p5.t":"MCP Nativo & AST GraphRAG","p5.d":"Conecte servidores MCP universais e reduza o consumo de tokens com indexação de código via AST e destilação de memória episódica, que se acumula com o tempo.",
+    "p5.t":"MCP, Skills e Engenharia de Contexto","p5.d":"Conecte qualquer servidor MCP e plugin, gerencie skills reutilizáveis dos agentes e mantenha o contexto e a memória de cada projeto (especificações, decisões, índice de código via AST, destilação episódica), para que os agentes comecem informados e gastem menos tokens com o tempo. Fluxos spec-driven transformam uma especificação escrita em cards planejados e revisáveis.",
     "p6.t":"Arquitetura Open-Core Escalável","p6.d":"Rode o /core via Docker Compose ou escale com a edição /ee e o Cloud SaaS: pools de sessões em equipe, RBAC e governança corporativa de FinOps. Hoje: o monorepo /core + /ee, licenças e CI.",
-    "int.kicker":"Integrações","int.title":"Traga o trabalho de onde ele já está",
-    "int.lead":"Os conectores sincronizam cards e status das ferramentas de projeto que seu time já usa com a máquina de estado da Tradvia. Todos seguem a mesma interface, o que faz de cada conector uma boa primeira contribuição.",
+    "int.shipped":"Em uso",
+    "int.partial":"Parcial",
+    "int.g.ai":"Fabricantes de modelos de IA",
+    "int.g.agents":"Agentes de código e ferramentas de vibe coding",
+    "int.g.repo":"Repositórios de código",
+    "int.g.orch":"Orquestradores e automação",
+    "int.g.pm":"Gestão de projetos",
+    "int.g.chat":"Chat e aprovações",
+    "int.g.proto":"Protocolos e extensões",
+    "int.kicker":"Integrações","int.title":"Funciona com o ecossistema de IA que você já usa",
+    "int.lead":"O Tradvia fica entre as suas pessoas, os fabricantes de IA e agentes de código, os seus repositórios e as suas ferramentas de projeto. Todo conector segue a mesma interface, então cada item abaixo também é uma boa primeira contribuição. Os status são reais.",
     "int.planned":"Planejado",
     "rm.title":"Roadmap","rm.done":"concluído","rm.prog":"em andamento","rm.plan":"planejado",
     "rm.0t":"Fase 0 — Fundação","rm.0d":"Monorepo open core (/core FSL, /ee comercial), CLA, CI e o contrato da máquina de estado dos cards.",
@@ -265,11 +283,11 @@ const I18N = {
   es: {
     "ea.title":"El acceso anticipado está en camino","ea.body":"Tradvia todavía está en sus primeras versiones. En cuanto estén disponibles, se abrirá aquí mismo un formulario de registro para que solicites acceso.","ea.follow":"Mientras tanto, puedes seguir el desarrollo en GitHub.","ea.close":"Entendido","ea.github":"Seguir en GitHub",
     "meta.title":"Tradvia — Plataforma Open-Core de AgentOps y Orquestación Híbrida",
-    "meta.desc":"Tradvia: plano de control open core en etapa temprana que orquesta personas, APIs multimodelo y sesiones aisladas en contenedores sobre un Kanban híbrido ejecutable, con Token FinOps en tiempo real.",
+    "meta.desc":"Tradvia: plataforma open core en etapa temprana para el trabajo híbrido entre personas y agentes autónomos — Kanban ejecutable con aprobación humana, costo por tarjeta y un ecosistema creciente de proveedores de IA, agentes de código y repositorios.",
     "nav.preview":"Vista previa","nav.arch":"Arquitectura","nav.int":"Integraciones","nav.roadmap":"Hoja de ruta","nav.runs":"Ejecuciones",
     "hero.badge":"Plataforma Open-Core de AgentOps y Orquestación Híbrida","hero.stage":"Etapa temprana · construido en público",
-    "hero.title":"Orquesta Personas, APIs Multimodelo y Sesiones Aisladas en Contenedores en un Único Plano de Control.",
-    "hero.lead":"Tradvia elimina la fricción entre la gestión de proyectos y la ejecución autónoma. Ve más allá de los prompts aislados: distribuye tareas en un Kanban híbrido, enruta cargas de trabajo entre pools de APIs de varios proveedores y sesiones autenticadas de navegador/CLI, controla cada token y segundo de cómputo con FinOps en tiempo real y alterna el control entre agentes de IA e ingenieros humanos sin perder contexto.",
+    "hero.title":"Personas y agentes autónomos trabajando juntos, en un solo plano de control.",
+    "hero.lead":"Tradvia es una plataforma de gestión híbrida de las acciones de personas y agentes autónomos. Abstrae la infraestructura para que te enfoques en la fluidez de la ejecución: más ahorro, más objetividad y menos riesgo operativo. Hoy: Kanban ejecutable con aprobación humana en el flujo, agentes que planifican y abren pull requests, y costo por tarjeta. En construcción: enrutamiento multicuenta de tokens, soporte nativo de MCP y plugins, gestión de skills, de contexto y de memoria de proyecto, y desarrollo guiado por especificación (spec-driven).",
     "hero.cta1":"Ver en GitHub","hero.cta2":"Solicitar acceso anticipado",
     "prev.kicker":"Vista previa interactiva del concepto","prev.title":"El tablero híbrido ejecutable",
     "prev.note":"Maqueta ilustrativa con datos simulados. Hoy la v0.1 incluye el runtime de APIs, la máquina de estados de las tarjetas y las aprobaciones en el chat; los workers de sesión, el pool de cuentas y el live takeover están planificados.",
@@ -293,10 +311,19 @@ const I18N = {
     "p2.t":"Pool Multicuenta y Token FinOps","p2.d":"Reúne cuentas de varios proveedores, distribuye la carga dentro de la cuota de RPM/TPM de cada cuenta, cambia de proveedor cuando uno está saturado o caído y aplica circuit breakers de presupuesto por tarjeta. Hoy: costo registrado en cada tarjeta.",
     "p3.t":"Kanban Ejecutable y Live Takeover","p3.d":"Cada tarjeta es una máquina de estados duradera. Pausa en aprobaciones por Slack/WhatsApp o entra en vivo al navegador o al terminal del contenedor para desbloquear al agente y devolverle el control. Hoy: máquina de estados y aprobación en el chat.",
     "p4.t":"Sandboxes Zero-Trust en MicroVMs","p4.d":"Aísla cada ejecución y sesión autenticada en Firecracker MicroVMs efímeras, respaldadas por PostgreSQL Row-Level Security y bóvedas cifradas de credenciales y sesiones.",
-    "p5.t":"MCP Nativo y AST GraphRAG","p5.d":"Conecta servidores MCP universales y reduce el consumo de tokens con indexación de código basada en AST y destilación de memoria episódica que se acumula con el tiempo.",
+    "p5.t":"MCP, Skills e Ingeniería de Contexto","p5.d":"Conecta cualquier servidor MCP y plugin, gestiona skills reutilizables de los agentes y conserva el contexto y la memoria de cada proyecto (especificaciones, decisiones, índice de código vía AST, destilación episódica), para que los agentes empiecen informados y gasten menos tokens con el tiempo. Los flujos spec-driven convierten una especificación escrita en tarjetas planificadas y revisables.",
     "p6.t":"Escalabilidad Open-Core","p6.d":"Autoaloja /core con Docker Compose o escala con /ee y el Cloud SaaS: pools de sesiones compartidos por equipo, RBAC y gobierno empresarial de FinOps. Hoy: el monorepo /core + /ee, licencias y CI.",
-    "int.kicker":"Integraciones","int.title":"Trae el trabajo desde donde ya está",
-    "int.lead":"Los conectores sincronizan tarjetas y estados de las herramientas de proyecto que tu equipo ya usa con la máquina de estados de Tradvia. Todos comparten la misma interfaz, lo que hace de cada conector una buena primera contribución.",
+    "int.shipped":"En uso",
+    "int.partial":"Parcial",
+    "int.g.ai":"Proveedores de modelos de IA",
+    "int.g.agents":"Agentes de código y herramientas de vibe coding",
+    "int.g.repo":"Repositorios de código",
+    "int.g.orch":"Orquestadores y automatización",
+    "int.g.pm":"Gestión de proyectos",
+    "int.g.chat":"Chat y aprobaciones",
+    "int.g.proto":"Protocolos y extensiones",
+    "int.kicker":"Integraciones","int.title":"Funciona con el ecosistema de IA que ya usas",
+    "int.lead":"Tradvia se ubica entre tus personas, los proveedores de IA y agentes de código, tus repositorios y tus herramientas de proyecto. Todos los conectores comparten la misma interfaz, así que cada elemento de abajo también es una buena primera contribución. Los estados son reales.",
     "int.planned":"Planificado",
     "rm.title":"Hoja de ruta","rm.done":"completado","rm.prog":"en curso","rm.plan":"planificado",
     "rm.0t":"Fase 0 — Fundación","rm.0d":"Monorepo open core (/core FSL, /ee comercial), CLA, CI y el contrato de la máquina de estados de las tarjetas.",
@@ -433,11 +460,26 @@ function renderPillars(){
     </article>`).join("");
 }
 
-const TOOLS = ["Trello","Jira","ClickUp","Monday.com","Asana","Wrike","Smartsheet","Artia","Microsoft Planner","KanbanFlow","Airtable"];
+const INT_BADGE = {shipped:"bg-emerald-400/10 text-emerald-300", partial:"bg-sky-400/10 text-sky-300", planned:"bg-amber-400/10 text-amber-300"};
+// Real status of each connector (keep in sync with the README and docs/).
+const INT_GROUPS = [
+  {g:"ai", items:[["Anthropic (Claude)","shipped"],["OpenAI","partial"],["Google Gemini","partial"],["Ollama (local)","partial"],["Mistral","planned"],["DeepSeek","planned"],["AWS Bedrock","planned"],["Azure OpenAI","planned"],["xAI (Grok)","planned"]]},
+  {g:"agents", items:[["Claude Code","shipped"],["OpenAI Codex CLI","planned"],["Gemini CLI","planned"],["Google Antigravity","planned"],["Kiro","planned"],["Air","planned"],["Cursor","planned"],["Windsurf","planned"],["GitHub Copilot","planned"]]},
+  {g:"repo", items:[["GitHub","shipped"],["GitLab","planned"],["Bitbucket","planned"],["Azure DevOps Repos","planned"]]},
+  {g:"orch", items:[["LangGraph","shipped"],["LiteLLM","partial"],["n8n","planned"],["CrewAI","planned"],["AutoGen","planned"],["OpenHands","planned"]]},
+  {g:"pm", items:[["GitHub Issues","shipped"],["Jira","planned"],["Linear","planned"],["Trello","planned"],["ClickUp","planned"],["Monday.com","planned"],["Asana","planned"],["Azure Boards","planned"],["Notion","planned"],["Wrike","planned"],["Smartsheet","planned"],["Artia","planned"],["Microsoft Planner","planned"],["Airtable","planned"]]},
+  {g:"chat", items:[["GitHub comments","shipped"],["Discord","shipped"],["Slack","planned"],["WhatsApp","planned"],["Microsoft Teams","planned"]]},
+  {g:"proto", items:[["MCP servers","planned"],["Plugins","planned"],["Agent skills","planned"],["GitHub webhooks","partial"]]},
+];
 function renderTools(){
-  document.getElementById("tools").innerHTML = TOOLS.map(n =>
-    `<li class="flex items-center justify-between gap-2 rounded-lg border border-white/10 px-3 py-2.5"><span class="text-sm text-white">${n}</span><span class="shrink-0 rounded bg-amber-400/10 px-1.5 py-0.5 text-[10px] text-amber-300">${t("int.planned")}</span></li>`).join("");
+  document.getElementById("tools").innerHTML = INT_GROUPS.map((gr, i) => `
+    <div style="margin-top:${i ? "2.25rem" : "0"}">
+      <h3 class="text-sm font-semibold text-slate-300">${t("int.g." + gr.g)}</h3>
+      <ul class="mt-3 grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">${gr.items.map(([n, st]) =>
+        `<li class="flex items-center justify-between gap-2 rounded-lg border border-white/10 px-3 py-2.5"><span class="text-sm text-white">${n}</span><span class="shrink-0 rounded px-1.5 py-0.5 text-[10px] ${INT_BADGE[st]}">${t("int." + st)}</span></li>`).join("")}</ul>
+    </div>`).join("");
 }
+
 
 document.getElementById("kill").addEventListener("click", () => { killed = !killed; updateMeters(); render(); });
 document.getElementById("handback").addEventListener("click", handBack);
