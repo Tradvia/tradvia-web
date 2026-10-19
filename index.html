@@ -3,19 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tradvia — Multi-Agent Orchestration for Project Execution</title>
-<meta name="description" content="Tradvia: early-stage open core that orchestrates AI agents and people executing a project, with progress visible as Kanban, Gantt, Burndown, WBS, calendar and capacity.">
+<title>Tradvia — Open-Core AgentOps &amp; Hybrid Execution Control Plane</title>
+<meta name="description" content="Tradvia: early-stage open-core control plane that orchestrates humans, multi-model APIs and isolated container sessions on an executable hybrid Kanban, with real-time Token FinOps.">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <!-- Tailwind CSS v3.4.17, compiled for this page -->
 <style>
-*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.visible{visibility:visible}.absolute{position:absolute}.relative{position:relative}.inset-y-0{top:0;bottom:0}.bottom-1\.5{bottom:.375rem}.top-1\.5{top:.375rem}.top-1\/2{top:50%}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.ml-auto{margin-left:auto}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:.125rem}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-16{height:4rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-5{height:1.25rem}.h-8{height:2rem}.max-h-72{max-height:18rem}.min-h-\[180px\]{min-height:180px}.min-h-\[96px\]{min-height:96px}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-2\.5{width:.625rem}.w-28{width:7rem}.w-3{width:.75rem}.w-44{width:11rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-full{width:100%}.w-px{width:1px}.min-w-\[12rem\]{min-width:12rem}.min-w-\[520px\]{min-width:520px}.min-w-\[640px\]{min-width:640px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.-translate-y-1\/2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y:-50%}.rotate-45{--tw-rotate:45deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem}.gap-y-3{row-gap:.75rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-400\/30{border-color:rgba(251,191,36,.3)}.border-amber-400\/50{border-color:rgba(251,191,36,.5)}.border-cyan-400\/20{border-color:rgba(34,211,238,.2)}.border-cyan-400\/30{border-color:rgba(34,211,238,.3)}.border-cyan-400\/50{border-color:rgba(34,211,238,.5)}.border-cyan-400\/60{border-color:rgba(34,211,238,.6)}.border-emerald-400\/50{border-color:rgba(52,211,153,.5)}.border-emerald-500\/30{border-color:rgba(16,185,129,.3)}.border-red-400\/50{border-color:hsla(0,91%,71%,.5)}.border-red-500\/40{border-color:rgba(239,68,68,.4)}.border-slate-500\/40{border-color:rgba(100,116,139,.4)}.border-violet-400\/50{border-color:rgba(167,139,250,.5)}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/15{border-color:hsla(0,0%,100%,.15)}.border-white\/20{border-color:hsla(0,0%,100%,.2)}.border-white\/5{border-color:hsla(0,0%,100%,.05)}.bg-\[\#0A0E19\]{--tw-bg-opacity:1;background-color:rgb(10 14 25/var(--tw-bg-opacity,1))}.bg-\[\#0B1020\]{--tw-bg-opacity:1;background-color:rgb(11 16 32/var(--tw-bg-opacity,1))}.bg-\[\#0F1629\]{--tw-bg-opacity:1;background-color:rgb(15 22 41/var(--tw-bg-opacity,1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36/var(--tw-bg-opacity,1))}.bg-amber-400\/10{background-color:rgba(251,191,36,.1)}.bg-amber-400\/15{background-color:rgba(251,191,36,.15)}.bg-cyan-300\/70{background-color:rgba(103,232,249,.7)}.bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238/var(--tw-bg-opacity,1))}.bg-cyan-400\/10{background-color:rgba(34,211,238,.1)}.bg-cyan-400\/15{background-color:rgba(34,211,238,.15)}.bg-cyan-400\/5{background-color:rgba(34,211,238,.05)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153/var(--tw-bg-opacity,1))}.bg-emerald-400\/10{background-color:rgba(52,211,153,.1)}.bg-emerald-400\/15{background-color:rgba(52,211,153,.15)}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-red-400{--tw-bg-opacity:1;background-color:rgb(248 113 113/var(--tw-bg-opacity,1))}.bg-red-400\/10{background-color:hsla(0,91%,71%,.1)}.bg-red-400\/15{background-color:hsla(0,91%,71%,.15)}.bg-red-500\/10{background-color:rgba(239,68,68,.1)}.bg-sky-400\/10{background-color:rgba(56,189,248,.1)}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184/var(--tw-bg-opacity,1))}.bg-slate-500\/15{background-color:rgba(100,116,139,.15)}.bg-slate-500\/60{background-color:rgba(100,116,139,.6)}.bg-slate-600{--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.bg-violet-400{--tw-bg-opacity:1;background-color:rgb(167 139 250/var(--tw-bg-opacity,1))}.bg-violet-400\/15{background-color:rgba(167,139,250,.15)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-white\/5{background-color:hsla(0,0%,100%,.05)}.bg-white\/\[\.02\]{background-color:hsla(0,0%,100%,.02)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-cyan-400{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-cyan-400\/10{--tw-gradient-from:rgba(34,211,238,.1) var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.to-emerald-400\/5{--tw-gradient-to:rgba(52,211,153,.05) var(--tw-gradient-to-position)}.p-0\.5{padding:.125rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-20{padding-bottom:5rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-.025em}.tracking-wider{letter-spacing:.05em}.text-\[\#070A12\]{--tw-text-opacity:1;color:rgb(7 10 18/var(--tw-text-opacity,1))}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138/var(--tw-text-opacity,1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77/var(--tw-text-opacity,1))}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249/var(--tw-text-opacity,1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238/var(--tw-text-opacity,1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252/var(--tw-text-opacity,1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-violet-300{--tw-text-opacity:1;color:rgb(196 181 253/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.line-through{text-decoration-line:line-through}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-red-400{--tw-ring-opacity:1;--tw-ring-color:rgb(248 113 113/var(--tw-ring-opacity,1))}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77/var(--tw-bg-opacity,1))}.hover\:bg-cyan-300:hover{--tw-bg-opacity:1;background-color:rgb(103 232 249/var(--tw-bg-opacity,1))}.hover\:bg-red-500\/20:hover{background-color:rgba(239,68,68,.2)}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-white\/20:hover{background-color:hsla(0,0%,100%,.2)}.hover\:bg-white\/5:hover{background-color:hsla(0,0%,100%,.05)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.disabled\:opacity-40:disabled{opacity:.4}@media (min-width:640px){.sm\:block{display:block}.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.sm\:p-10{padding:2.5rem}.sm\:py-28{padding-top:7rem;padding-bottom:7rem}.sm\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width:768px){.md\:inline{display:inline}.md\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.md\:grid-cols-\[1fr_14rem\]{grid-template-columns:1fr 14rem}}@media (min-width:1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.mx-auto{margin-left:auto;margin-right:auto}.ml-2{margin-left:.5rem}.ml-auto{margin-left:auto}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-16{height:4rem}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-5{height:1.25rem}.h-8{height:2rem}.h-9{height:2.25rem}.min-h-\[230px\]{min-height:230px}.w-1\.5{width:.375rem}.w-2{width:.5rem}.w-2\.5{width:.625rem}.w-3{width:.75rem}.w-5{width:1.25rem}.w-8{width:2rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-md{max-width:28rem}.shrink-0{flex-shrink:0}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-x-3{-moz-column-gap:.75rem;column-gap:.75rem}.gap-x-7{-moz-column-gap:1.75rem;column-gap:1.75rem}.gap-y-1{row-gap:.25rem}.gap-y-3{row-gap:.75rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.overflow-hidden,.truncate{overflow:hidden}.truncate{text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-400\/30{border-color:rgba(251,191,36,.3)}.border-amber-400\/50{border-color:rgba(251,191,36,.5)}.border-amber-400\/70{border-color:rgba(251,191,36,.7)}.border-cyan-400\/20{border-color:rgba(34,211,238,.2)}.border-cyan-400\/30{border-color:rgba(34,211,238,.3)}.border-cyan-400\/50{border-color:rgba(34,211,238,.5)}.border-emerald-400\/50{border-color:rgba(52,211,153,.5)}.border-emerald-500\/30{border-color:rgba(16,185,129,.3)}.border-red-500\/40{border-color:rgba(239,68,68,.4)}.border-slate-500\/40{border-color:rgba(100,116,139,.4)}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/15{border-color:hsla(0,0%,100%,.15)}.border-white\/20{border-color:hsla(0,0%,100%,.2)}.border-white\/5{border-color:hsla(0,0%,100%,.05)}.bg-\[\#0A0E19\]{--tw-bg-opacity:1;background-color:rgb(10 14 25/var(--tw-bg-opacity,1))}.bg-\[\#0B1020\]{--tw-bg-opacity:1;background-color:rgb(11 16 32/var(--tw-bg-opacity,1))}.bg-\[\#0F1629\]{--tw-bg-opacity:1;background-color:rgb(15 22 41/var(--tw-bg-opacity,1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36/var(--tw-bg-opacity,1))}.bg-amber-400\/10{background-color:rgba(251,191,36,.1)}.bg-amber-400\/\[\.04\]{background-color:rgba(251,191,36,.04)}.bg-cyan-300{--tw-bg-opacity:1;background-color:rgb(103 232 249/var(--tw-bg-opacity,1))}.bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238/var(--tw-bg-opacity,1))}.bg-cyan-400\/10{background-color:rgba(34,211,238,.1)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153/var(--tw-bg-opacity,1))}.bg-emerald-400\/10{background-color:rgba(52,211,153,.1)}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-fuchsia-400\/10{background-color:rgba(232,121,249,.1)}.bg-red-400{--tw-bg-opacity:1;background-color:rgb(248 113 113/var(--tw-bg-opacity,1))}.bg-red-500\/10{background-color:rgba(239,68,68,.1)}.bg-sky-400\/10{background-color:rgba(56,189,248,.1)}.bg-slate-600{--tw-bg-opacity:1;background-color:rgb(71 85 105/var(--tw-bg-opacity,1))}.bg-violet-400\/10{background-color:rgba(167,139,250,.1)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/5{background-color:hsla(0,0%,100%,.05)}.bg-white\/\[\.02\]{background-color:hsla(0,0%,100%,.02)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-cyan-400{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-cyan-400\/10{--tw-gradient-from:rgba(34,211,238,.1) var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-emerald-400{--tw-gradient-to:#34d399 var(--tw-gradient-to-position)}.to-emerald-400\/5{--tw-gradient-to:rgba(52,211,153,.05) var(--tw-gradient-to-position)}.p-0\.5{padding:.125rem}.p-3{padding:.75rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:.375rem;padding-right:.375rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-20{padding-bottom:5rem}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-.025em}.tracking-wider{letter-spacing:.05em}.text-\[\#070A12\]{--tw-text-opacity:1;color:rgb(7 10 18/var(--tw-text-opacity,1))}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138/var(--tw-text-opacity,1))}.text-amber-200\/90{color:hsla(48,97%,77%,.9)}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77/var(--tw-text-opacity,1))}.text-amber-300\/80{color:rgba(252,211,77,.8)}.text-cyan-200{--tw-text-opacity:1;color:rgb(165 243 252/var(--tw-text-opacity,1))}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249/var(--tw-text-opacity,1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238/var(--tw-text-opacity,1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-fuchsia-300{--tw-text-opacity:1;color:rgb(240 171 252/var(--tw-text-opacity,1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-violet-300{--tw-text-opacity:1;color:rgb(196 181 253/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77/var(--tw-bg-opacity,1))}.hover\:bg-cyan-300:hover{--tw-bg-opacity:1;background-color:rgb(103 232 249/var(--tw-bg-opacity,1))}.hover\:bg-red-500\/20:hover{background-color:rgba(239,68,68,.2)}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-white\/20:hover{background-color:hsla(0,0%,100%,.2)}.hover\:bg-white\/5:hover{background-color:hsla(0,0%,100%,.05)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:underline:hover{text-decoration-line:underline}.disabled\:no-underline:disabled{text-decoration-line:none}.disabled\:opacity-40:disabled{opacity:.4}@media (min-width:640px){.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-\[1fr_15rem\]{grid-template-columns:1fr 15rem}.sm\:p-10{padding:2.5rem}.sm\:py-28{padding-top:7rem;padding-bottom:7rem}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width:768px){.md\:inline{display:inline}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}@media (min-width:1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:text-6xl{font-size:3.75rem;line-height:1}}
   body{background:#070A12}
   .grid-bg{background-image:linear-gradient(rgba(0,240,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,240,255,.05) 1px,transparent 1px);background-size:40px 40px}
+  .card{transition:transform .25s,opacity .25s}
+  .card.moving{opacity:.3;transform:scale(.97)}
   .lang[aria-pressed="true"]{background:rgba(255,255,255,.12);color:#fff}
-  .tab[aria-selected="true"]{background:rgba(0,240,255,.12);color:#fff;border-color:rgba(0,240,255,.45)}
-  .view-in{animation:fade .25s ease}
-  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
-  @media (prefers-reduced-motion:reduce){.view-in{animation:none}}
+  .live-dot{animation:pulse 1.4s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.35}}
+  @media (prefers-reduced-motion:reduce){.card{transition:none}.live-dot{animation:none}}
 </style>
 </head>
 <body class="text-slate-300 antialiased">
@@ -41,11 +42,16 @@
 <main>
 <section class="grid-bg">
   <div class="max-w-6xl mx-auto px-4 py-20 sm:py-28">
-    <p class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300">
-      <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> <span data-i18n="hero.badge">Early-stage open core · building in public</span>
-    </p>
-    <h1 class="mt-6 max-w-4xl text-4xl sm:text-6xl font-bold tracking-tight text-white" data-i18n="hero.title">People and AI agents executing one project, with progress everyone can see.</h1>
-    <p class="mt-6 max-w-2xl text-lg text-slate-400" data-i18n-html="hero.lead"></p>
+    <div class="flex flex-wrap gap-2">
+      <p class="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200">
+        <span class="h-1.5 w-1.5 rounded-full bg-cyan-300"></span> <span data-i18n="hero.badge">Open-Core AgentOps &amp; Hybrid Execution Control Plane</span>
+      </p>
+      <p class="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs text-emerald-300">
+        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> <span data-i18n="hero.stage">Early stage · building in public</span>
+      </p>
+    </div>
+    <h1 class="mt-6 max-w-4xl text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white" data-i18n="hero.title"></h1>
+    <p class="mt-6 max-w-3xl text-lg text-slate-400" data-i18n="hero.lead"></p>
     <div class="mt-10 flex flex-wrap gap-3">
       <a href="https://github.com/tradvia" class="rounded-lg bg-cyan-400 px-5 py-3 font-semibold text-[#070A12] hover:bg-cyan-300" data-i18n="hero.cta1">View on GitHub</a>
       <a href="mailto:security@tradvia.org?subject=Tradvia%20early%20access" class="rounded-lg border border-white/15 px-5 py-3 font-semibold text-white hover:bg-white/5" data-i18n="hero.cta2">Get early access</a>
@@ -56,79 +62,75 @@
 <section id="preview" class="max-w-6xl mx-auto px-4 py-20">
   <div class="flex flex-wrap items-end justify-between gap-4">
     <div>
-      <p class="text-sm font-semibold uppercase tracking-wider text-cyan-400" data-i18n="prev.kicker">Interactive concept preview</p>
-      <h2 class="mt-2 text-3xl font-bold text-white" data-i18n="prev.title">One project, six ways to see it</h2>
+      <p class="text-sm font-semibold uppercase tracking-wider text-cyan-400" data-i18n="prev.kicker"></p>
+      <h2 class="mt-2 text-3xl font-bold text-white" data-i18n="prev.title"></h2>
     </div>
     <p class="max-w-md text-sm text-slate-400" data-i18n="prev.note"></p>
   </div>
 
   <div class="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-[#0B1020]">
-    <div class="flex flex-wrap items-center gap-x-8 gap-y-3 border-b border-white/10 px-5 py-4 text-sm">
-      <span class="font-semibold text-white" data-i18n="fin.title">FinOps telemetry</span>
-      <span><span data-i18n="fin.spend">Sprint spend</span> <b id="spend" class="font-mono text-cyan-300">$41.20</b> / $120</span>
-      <span><span data-i18n="fin.saved">Cache savings</span> <b id="saved" class="font-mono text-emerald-400">$18.75</b></span>
-      <span><span data-i18n="fin.agents">Active agents</span> <b id="agents" class="font-mono text-white">0</b></span>
+    <div class="flex flex-wrap items-center gap-x-7 gap-y-3 border-b border-white/10 px-5 py-4 text-sm">
+      <span class="font-semibold text-white" data-i18n="fin.title"></span>
+      <span><span data-i18n="fin.spend"></span> <b id="spend" class="font-mono text-cyan-300"></b> / $120</span>
+      <span><span data-i18n="fin.pool"></span> <b class="font-mono text-white" data-i18n="fin.poolVal"></b></span>
+      <span><span data-i18n="fin.saved"></span> <b id="saved" class="font-mono text-emerald-400"></b></span>
+      <span><span data-i18n="fin.agents"></span> <b id="agents" class="font-mono text-white"></b></span>
       <button id="kill" class="ml-auto rounded-md border border-red-500/40 bg-red-500/10 px-3 py-1.5 font-semibold text-red-300 hover:bg-red-500/20" aria-pressed="false"></button>
     </div>
     <div class="h-1 bg-white/5"><div id="budget" class="h-1 bg-gradient-to-r from-cyan-400 to-emerald-400" style="width:34%"></div></div>
+    <div id="board" class="grid gap-4 p-5 md:grid-cols-4"></div>
 
-    <div class="flex flex-wrap items-center gap-3 border-b border-white/10 px-5 py-3 text-sm">
-      <span class="font-semibold text-white" data-i18n="i.P">Checkout v2</span>
-      <span id="daylabel" class="font-mono text-slate-400"></span>
-      <div class="ml-auto flex gap-2">
-        <button id="next" class="rounded-md bg-cyan-400 px-3 py-1.5 font-semibold text-[#070A12] hover:bg-cyan-300 disabled:opacity-40"></button>
-        <button id="restart" class="rounded-md border border-white/15 px-3 py-1.5 text-white hover:bg-white/5" data-i18n="ctl.restart">Restart</button>
+    <div id="takeover" class="hidden border-t border-amber-400/30 bg-amber-400/[.04] p-5">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <p class="flex items-center gap-2 text-sm font-semibold text-amber-200"><span class="live-dot h-2 w-2 rounded-full bg-red-400"></span><span id="tk-title"></span></p>
+        <button id="handback" class="rounded-md bg-amber-400 px-3 py-1.5 text-sm font-semibold text-[#070A12] hover:bg-amber-300" data-i18n="tk.handback"></button>
+      </div>
+      <div class="mt-4 overflow-hidden rounded-lg border border-white/10 bg-[#0F1629]">
+        <div class="flex items-center gap-2 border-b border-white/10 px-3 py-2">
+          <span class="h-2.5 w-2.5 rounded-full bg-white/20"></span><span class="h-2.5 w-2.5 rounded-full bg-white/20"></span><span class="h-2.5 w-2.5 rounded-full bg-white/20"></span>
+          <span id="tk-url" class="ml-2 truncate rounded bg-white/5 px-2 py-0.5 font-mono text-xs text-slate-400"></span>
+        </div>
+        <div class="grid gap-4 p-5 sm:grid-cols-[1fr_15rem]">
+          <div>
+            <p id="tk-blocker" class="text-sm text-white"></p>
+            <div class="mt-3 flex gap-2" aria-hidden="true">
+              <span class="h-9 w-8 rounded border border-white/15 bg-white/5"></span><span class="h-9 w-8 rounded border border-white/15 bg-white/5"></span><span class="h-9 w-8 rounded border border-white/15 bg-white/5"></span><span class="h-9 w-8 rounded border border-white/15 bg-white/5"></span><span class="h-9 w-8 rounded border border-white/15 bg-white/5"></span><span class="h-9 w-8 rounded border border-white/15 bg-white/5"></span>
+            </div>
+          </div>
+          <ul class="space-y-1.5 text-xs text-slate-400">
+            <li data-i18n="tk.stream"></li>
+            <li data-i18n="tk.mutex"></li>
+            <li data-i18n="tk.frozen"></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div id="gate" class="hidden flex-wrap items-center gap-3 border-b border-amber-400/30 bg-amber-400/10 px-5 py-3 text-sm text-amber-200">
-      <span id="gatemsg" class="flex-1 min-w-[12rem]"></span>
-      <button class="approve rounded-md bg-amber-400 px-3 py-1.5 font-semibold text-[#070A12] hover:bg-amber-300" data-i18n="gate.btn">Approve as Ana</button>
-    </div>
 
-    <div class="flex gap-2 overflow-x-auto border-b border-white/10 px-5 py-3" role="tablist" aria-label="Views" id="tabs"></div>
-    <p id="question" class="px-5 pt-4 text-sm text-slate-400"></p>
-    <div id="view" class="p-5"></div>
+    <div class="flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-white/10 px-5 py-3 text-xs">
+      <span class="font-semibold text-slate-400" data-i18n="router.title"></span>
+      <span id="router" class="font-mono text-slate-300"></span>
+    </div>
+    <p class="border-t border-white/10 px-5 py-3 text-xs text-slate-500" data-i18n="prev.hint"></p>
   </div>
 </section>
 
 <section id="architecture" class="border-y border-white/5 bg-[#0A0E19]">
   <div class="max-w-6xl mx-auto px-4 py-20">
-    <h2 class="text-3xl font-bold text-white" data-i18n="arch.title">Four architecture pillars</h2>
+    <h2 class="text-3xl font-bold text-white" data-i18n="arch.title"></h2>
     <p class="mt-3 max-w-2xl text-slate-400" data-i18n="arch.lead"></p>
-    <div class="mt-10 grid gap-5 sm:grid-cols-2">
-      <article class="rounded-xl border border-white/10 p-6">
-        <div class="flex items-center justify-between gap-3"><h3 class="font-semibold text-white" data-i18n="p1.t"></h3><span class="shrink-0 rounded bg-emerald-400/10 px-2 py-0.5 text-xs text-emerald-300" data-i18n="st.progress"></span></div>
-        <p class="mt-3 text-sm text-slate-400" data-i18n="p1.d"></p>
-      </article>
-      <article class="rounded-xl border border-white/10 p-6">
-        <div class="flex items-center justify-between gap-3"><h3 class="font-semibold text-white" data-i18n="p2.t"></h3><span class="shrink-0 rounded bg-emerald-400/10 px-2 py-0.5 text-xs text-emerald-300" data-i18n="st.progress"></span></div>
-        <p class="mt-3 text-sm text-slate-400" data-i18n="p2.d"></p>
-      </article>
-      <article class="rounded-xl border border-white/10 p-6">
-        <div class="flex items-center justify-between gap-3"><h3 class="font-semibold text-white" data-i18n="p3.t"></h3><span class="shrink-0 rounded bg-sky-400/10 px-2 py-0.5 text-xs text-sky-300" data-i18n="st.partial"></span></div>
-        <p class="mt-3 text-sm text-slate-400" data-i18n="p3.d"></p>
-      </article>
-      <article class="rounded-xl border border-white/10 p-6">
-        <div class="flex items-center justify-between gap-3"><h3 class="font-semibold text-white" data-i18n="p4.t"></h3><span class="shrink-0 rounded bg-amber-400/10 px-2 py-0.5 text-xs text-amber-300" data-i18n="st.planned"></span></div>
-        <p class="mt-3 text-sm text-slate-400" data-i18n="p4.d"></p>
-      </article>
-    </div>
+    <div id="pillars" class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
   </div>
 </section>
 
 <section id="integrations" class="max-w-6xl mx-auto px-4 py-20">
-  <p class="text-sm font-semibold uppercase tracking-wider text-cyan-400" data-i18n="int.kicker">Integrations</p>
+  <p class="text-sm font-semibold uppercase tracking-wider text-cyan-400" data-i18n="int.kicker"></p>
   <h2 class="mt-2 text-3xl font-bold text-white" data-i18n="int.title"></h2>
   <p class="mt-3 max-w-2xl text-slate-400" data-i18n="int.lead"></p>
-  <div class="mt-8 rounded-xl border border-cyan-400/30 bg-cyan-400/5 p-5 flex flex-wrap items-center justify-between gap-3">
-    <div><h3 class="font-semibold text-white" data-i18n="int.native"></h3><p class="text-sm text-slate-400" data-i18n="int.nativeD"></p></div>
-    <span class="rounded bg-emerald-400/10 px-2 py-0.5 text-xs text-emerald-300" data-i18n="st.progress"></span>
-  </div>
-  <ul id="tools" class="mt-4 grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"></ul>
+  <ul id="tools" class="mt-8 grid gap-3 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"></ul>
 </section>
 
 <section id="roadmap" class="border-t border-white/5 max-w-6xl mx-auto px-4 py-20">
-  <h2 class="text-3xl font-bold text-white" data-i18n="rm.title">Roadmap</h2>
+  <h2 class="text-3xl font-bold text-white" data-i18n="rm.title"></h2>
   <ol class="mt-8 space-y-4">
     <li class="flex gap-4"><span class="mt-1 h-3 w-3 shrink-0 rounded-full bg-emerald-400"></span><div><b class="text-white" data-i18n="rm.0t"></b> <span class="text-emerald-300 text-sm" data-i18n="rm.done"></span><p class="text-sm text-slate-400" data-i18n="rm.0d"></p></div></li>
     <li class="flex gap-4"><span class="mt-1 h-3 w-3 shrink-0 rounded-full bg-cyan-400"></span><div><b class="text-white" data-i18n="rm.1t"></b> <span class="text-cyan-300 text-sm" data-i18n="rm.prog"></span><p class="text-sm text-slate-400" data-i18n="rm.1d"></p></div></li>
@@ -139,10 +141,10 @@
 
 <section class="max-w-6xl mx-auto px-4 pb-20">
   <div class="rounded-2xl border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 to-emerald-400/5 p-8 sm:p-10">
-    <h2 class="text-2xl font-bold text-white" data-i18n="cta.title">Call for contributors</h2>
+    <h2 class="text-2xl font-bold text-white" data-i18n="cta.title"></h2>
     <p class="mt-3 max-w-2xl text-slate-300" data-i18n="cta.lead"></p>
     <div class="mt-6 flex flex-wrap gap-3">
-      <a href="https://github.com/tradvia/tradvia" class="rounded-lg bg-white px-5 py-3 font-semibold text-[#070A12] hover:bg-slate-200" data-i18n="cta.btn">Start contributing</a>
+      <a href="https://github.com/tradvia/tradvia" class="rounded-lg bg-white px-5 py-3 font-semibold text-[#070A12] hover:bg-slate-200" data-i18n="cta.btn"></a>
       <a href="mailto:security@tradvia.org" class="rounded-lg border border-white/20 px-5 py-3 font-semibold text-white hover:bg-white/5">security@tradvia.org</a>
     </div>
   </div>
@@ -151,149 +153,140 @@
 
 <footer class="border-t border-white/5">
   <div class="max-w-6xl mx-auto px-4 py-8 flex flex-wrap items-center justify-between gap-4 text-sm text-slate-500">
-    <span class="flex items-center gap-2"><img src="logo.svg" alt="" width="20" height="20" class="w-5 h-5"> <span data-i18n="ft.founded">Tradvia · Founded by Anderson dos Santos Dutra</span></span>
-    <span><span data-i18n="ft.license">Fair-source core (FSL-1.1-ALv2)</span> · <a class="hover:text-white" href="https://github.com/tradvia/tradvia">github.com/tradvia</a></span>
+    <span class="flex items-center gap-2"><img src="logo.svg" alt="" width="20" height="20" class="w-5 h-5"> <span data-i18n="ft.founded"></span></span>
+    <span><span data-i18n="ft.license"></span> · <a class="hover:text-white" href="https://github.com/tradvia/tradvia">github.com/tradvia</a></span>
   </div>
 </footer>
 
 <script>
 const I18N = {
   en: {
-    "meta.title":"Tradvia — Multi-Agent Orchestration for Project Execution",
-    "meta.desc":"Tradvia: early-stage open core that orchestrates AI agents and people executing a project, with progress visible as Kanban, Gantt, Burndown, WBS, calendar and capacity.",
+    "meta.title":"Tradvia — Open-Core AgentOps & Hybrid Execution Control Plane",
+    "meta.desc":"Tradvia: early-stage open-core control plane that orchestrates humans, multi-model APIs and isolated container sessions on an executable hybrid Kanban, with real-time Token FinOps.",
     "nav.preview":"Preview","nav.arch":"Architecture","nav.int":"Integrations","nav.roadmap":"Roadmap",
-    "hero.badge":"Early-stage open core · building in public",
-    "hero.title":"People and AI agents executing one project, with progress everyone can see.",
-    "hero.lead":"Tradvia is a zero-trust, multi-agent orchestrator for project execution. Agents and people share the same work items, and every action is visible in the notation each audience needs — <span class=\"text-cyan-300\">Kanban, Gantt, Burndown, WBS, calendar and capacity</span> — in Tradvia or inside the tool your team already uses.",
+    "hero.badge":"Open-Core AgentOps & Hybrid Execution Control Plane","hero.stage":"Early stage · building in public",
+    "hero.title":"Orchestrate Humans, Multi-Model APIs, and Isolated Container Sessions in a Single Control Plane.",
+    "hero.lead":"Tradvia removes the coordination friction between project management and autonomous execution. Move beyond isolated chat prompts: dispatch tasks on a hybrid Kanban, route workloads across multi-vendor API pools and stateful browser/CLI containers, track every token and compute second with real-time FinOps, and hand control back and forth between AI agents and human engineers without losing context.",
     "hero.cta1":"View on GitHub","hero.cta2":"Get early access",
-    "prev.kicker":"Interactive concept preview","prev.title":"One project, six ways to see it",
-    "prev.note":"Simulated data. Every view is computed from the same seven work items, with the projections now implemented in the core library. The web interface itself is not shipped yet.",
-    "v.kanban":"Kanban","v.gantt":"Gantt","v.burndown":"Burndown","v.wbs":"WBS","v.timeline":"Calendar","v.capacity":"Capacity",
-    "q.kanban":"Where is each item in the workflow right now?",
-    "q.gantt":"How long does each item take, what depends on what, and which milestone is at risk?",
-    "q.burndown":"Will the sprint scope be delivered in time?",
-    "q.wbs":"How does the scope break down into deliverables?",
-    "q.timeline":"What is due on which date?",
-    "q.capacity":"Who — person or agent — is over- or under-allocated?",
-    "ctl.day":"Day {n} of {total} · {date}","ctl.next":"Advance one day ▸","ctl.restart":"Restart","ctl.end":"Sprint finished",
-    "gate.msg":"{id} is waiting for {who} on Slack. Agents cannot skip a human gate, so the items that depend on it stay blocked.",
-    "gate.btn":"Approve as Ana",
-    "s.BACKLOG":"To do","s.AGENT_WORKING":"In progress","s.WAITING_HUMAN":"Waiting for a person","s.IN_REVIEW_PR":"In review (PR)","s.DONE":"Done",
-    "lbl.blocked":"blocked by {ids}","lbl.paused":"paused (kill switch)","lbl.today":"Today","lbl.ideal":"Ideal","lbl.remaining":"Remaining",
-    "lbl.points":"story points","lbl.week":"Week {n}","lbl.overloaded":"Overloaded","lbl.agent":"agent","lbl.milestone":"Milestone","lbl.late":"late",
-    "lbl.capNote":"Planned hours per week from the same items, against each member's capacity (Bruno is part-time).",
-    "lbl.wbsNote":"Progress rolls up from the effort of finished items.",
-    "i.P":"Checkout v2","i.P1":"Discovery","i.P2":"Build","i.P3":"Release","i.T1":"Gather requirements","i.T2":"Design the API",
-    "i.T3":"Payment endpoints","i.T4":"Checkout screens","i.T5":"Refund rule: partial or full?","i.T6":"Tests and code review","i.M":"Launch",
-    "fin.title":"FinOps telemetry","fin.spend":"Sprint spend","fin.saved":"Cache savings","fin.agents":"Active agents",
-    "fin.active":"active","kill.on":"Kill switch","kill.off":"Agents halted — resume",
-    "arch.title":"Four architecture pillars","arch.lead":"Each pillar is labelled with its real status, so you know what runs today and what is still on the drawing board.",
-    "st.planned":"Planned · v0.2+","st.progress":"In progress · v0.1","st.partial":"Partial · v0.1",
-    "p1.t":"Multi-view transparency","p1.d":"One neutral work model and six projections — Kanban, Gantt, Burndown, WBS, calendar and capacity — implemented and tested in the core library. The web views come next.",
-    "p2.t":"Human-in-the-loop orchestration","p2.d":"A LangGraph flow where agents plan and execute work items and pause for a person's decision in chat before anything ships, such as opening a pull request.",
-    "p3.t":"Cognitive FinOps","p3.d":"LiteLLM routing with cost recorded on every work item today. Budget circuit breakers and a token ledger are planned.",
-    "p4.t":"Zero-trust & MCP","p4.d":"Row-level security per tenant, an ephemeral sandbox per task and integrations through Model Context Protocol servers. v0.1 still talks to GitHub through its REST API.",
-    "int.kicker":"Integrations","int.title":"Native views, or the tool you already use",
-    "int.lead":"Connectors map each tool's items and statuses to the same work model, so every view works on top of the boards you already have. They all share one interface, which makes each connector a good first contribution.",
-    "int.native":"Tradvia native views","int.nativeD":"Kanban · Gantt · Burndown · WBS · Calendar · Capacity","int.planned":"Planned",
+    "prev.kicker":"Interactive concept preview","prev.title":"The executable hybrid board",
+    "prev.note":"Illustrative mock-up with simulated data. Today v0.1 ships the API runtime, the card state machine and approval gates in chat; session workers, the account pool and live takeover are planned.",
+    "prev.hint":"Click “Advance” to move a card. When a session agent hits a blocker, take over the session, resolve it and hand control back. Agents cannot skip a human gate.",
+    "fin.title":"Token FinOps","fin.spend":"Sprint spend","fin.pool":"Account pool","fin.poolVal":"5 accounts · 4 vendors","fin.saved":"Saved by distillation","fin.agents":"Active agents",
+    "kill.on":"Budget kill switch","kill.off":"Agents halted — resume",
+    "col.ready":"1. Ready for dispatch","col.exec":"2. Agent executing","col.human":"3. Waiting for a human","col.humanSub":"Slack / WhatsApp · live takeover","col.review":"4. PR review & distilled",
+    "rt.api":"API","rt.browser":"Browser session","rt.cli":"CLI session",
+    "cost.tokens":"tokens","cost.compute":"compute",
+    "btn.adv":"Advance →","btn.approve":"Approve & resume →","btn.takeover":"Take over session →","card.distilled":"Lessons distilled ✓",
+    "blk.2fa":"Blocked: 2FA prompt in the supplier portal","blk.arch":"Blocked: schema migration needs an architecture decision","blk.gate":"Approval gate: refund rule, partial or full?",
+    "c.12":"Migrate billing webhooks to v2","c.9":"Refactor the auth module and its tests","c.7":"Export Q3 invoices from the supplier portal","c.4":"Fix flaky login test",
+    "who.ask":"asked Anderson on Slack","who.askWa":"asked Anderson on WhatsApp","who.human":"Anderson is in the session","who.pr":"PR opened",
+    "tk.title":"Live takeover · {id} · session frozen for you","tk.handback":"Hand control back to the agent →",
+    "tk.stream":"Streaming the browser over WebRTC","tk.mutex":"Session mutex held by Anderson — the agent waits","tk.frozen":"Agent state checkpointed; it resumes from here",
+    "router.title":"Router","router.idle":"waiting for work",
+    "router.ev1":"{id} → Anthropic · account 1 (58% of TPM quota)","router.ev2":"{id} → OpenAI account 2 near its RPM quota · routed to Gemini · account 1","router.ev3":"{id} → Ollama (local) · $0.00","router.ev4":"{id} → session worker #3 · Firecracker MicroVM",
+    "arch.title":"Six architecture pillars","arch.lead":"Each pillar shows its real status, so you know what runs today and what is still being built.",
+    "st.shipped":"Shipped · v0.1","st.progress":"In progress · v0.1","st.partial":"Partial · v0.1","st.planned":"Planned · v0.2+",
+    "p1.t":"Dual-Runtime Dispatching","p1.d":"Orchestrate stateless LLM APIs (OpenAI, Anthropic, Gemini, Ollama) alongside stateful CLI and browser containers (Playwright/CDP) with session mutex locks and persistent auth contexts. Today: APIs through LiteLLM; session workers are next.",
+    "p2.t":"Multi-Account Pool & Token FinOps","p2.d":"Pool accounts across vendors, spread load within each account's RPM/TPM quota, fall back across vendors when one is saturated or down, and enforce per-card budget circuit breakers. Today: cost recorded on every card.",
+    "p3.t":"Executable Kanban & Live Takeover","p3.d":"Every card is a durable state machine. Pause on Slack/WhatsApp approval gates, or jump into a running browser or terminal session to unblock an agent and hand control back. Today: state machine and approval in chat.",
+    "p4.t":"Zero-Trust MicroVM Sandboxes","p4.d":"Isolate every execution and authenticated session in ephemeral Firecracker MicroVMs, backed by PostgreSQL Row-Level Security and encrypted credential and session vaults.",
+    "p5.t":"Native MCP & AST GraphRAG","p5.d":"Connect universal MCP servers and cut token usage with AST-based codebase indexing and episodic knowledge distillation that compounds over time.",
+    "p6.t":"Open-Core Scalability","p6.d":"Self-host /core with Docker Compose, or scale with /ee and Cloud SaaS: shared team session pools, RBAC and enterprise FinOps governance. Today: the /core + /ee monorepo, licenses and CI.",
+    "int.kicker":"Integrations","int.title":"Bring the work from where it already lives",
+    "int.lead":"Connectors sync cards and statuses from the project tools your team already uses into Tradvia's state machine. They all share one interface, which makes each connector a good first contribution.",
+    "int.planned":"Planned",
     "rm.title":"Roadmap","rm.done":"done","rm.prog":"in progress","rm.plan":"planned",
-    "rm.0t":"Phase 0 — Foundation","rm.0d":"Open-core repository, licensing, governance and the work-item lifecycle contract.",
-    "rm.1t":"Phase 1 — Engine v0.1","rm.1d":"LangGraph orchestrator, the neutral work model with its six views, LiteLLM routing, GitHub integration and human approval in chat.",
-    "rm.2t":"Phase 2 — Web views and first connectors","rm.2d":"The six views in the browser and the first connectors (Jira and Trello), built in public with v0.1 agents.",
-    "rm.3t":"Phase 3 — Enterprise","rm.3d":"SSO and RBAC, WhatsApp and Teams, portfolio and ROI dashboards, and the remaining connectors.",
-    "cta.title":"Call for contributors","cta.lead":"We are looking for early contributors in LangGraph, project-tool connectors, MCP servers, data visualization and AI security.","cta.btn":"Start contributing",
+    "rm.0t":"Phase 0 — Foundation","rm.0d":"Open-core monorepo (/core FSL, /ee commercial), CLA, CI and the card state-machine contract.",
+    "rm.1t":"Phase 1 — Engine v0.1","rm.1d":"LangGraph orchestrator, LiteLLM API runtime with cost per card, GitHub integration and approval gates in chat.",
+    "rm.2t":"Phase 2 — Session workers & takeover","rm.2d":"Stateful browser/CLI workers in Firecracker MicroVMs with session mutex, live takeover over WebRTC, multi-account pool with budget circuit breakers, MCP, and Docker Compose self-hosting.",
+    "rm.3t":"Phase 3 — Enterprise & Cloud","rm.3d":"/ee and Cloud SaaS: team session pools, SSO and RBAC, WhatsApp and Teams, AST GraphRAG with distillation, and enterprise FinOps governance.",
+    "cta.title":"Call for contributors","cta.lead":"We are looking for early contributors in LangGraph, Playwright/CDP session workers, Firecracker, MCP servers, FinOps and AI security.","cta.btn":"Start contributing",
     "ft.founded":"Tradvia · Founded by Anderson dos Santos Dutra","ft.license":"Fair-source core (FSL-1.1-ALv2)"
   },
   "pt-BR": {
-    "meta.title":"Tradvia — Orquestração Multiagente para Execução de Projetos",
-    "meta.desc":"Tradvia: open core em estágio inicial que orquestra agentes de IA e pessoas na execução de projetos, com o andamento visível em Kanban, Gantt, Burndown, EAP, calendário e capacidade.",
+    "meta.title":"Tradvia — Plataforma Open-Core de AgentOps & Orquestração Híbrida",
+    "meta.desc":"Tradvia: plano de controle open core em estágio inicial que orquestra humanos, APIs multimodelo e sessões isoladas em container em um Kanban híbrido executável, com Token FinOps em tempo real.",
     "nav.preview":"Prévia","nav.arch":"Arquitetura","nav.int":"Integrações","nav.roadmap":"Roadmap",
-    "hero.badge":"Open core em estágio inicial · construído em público",
-    "hero.title":"Pessoas e agentes de IA executando o mesmo projeto, com o andamento visível para todos.",
-    "hero.lead":"A Tradvia é um orquestrador multiagente para execução de projetos, com segurança zero-trust. Agentes e pessoas compartilham as mesmas atividades, e cada ação fica visível na notação de que cada público precisa — <span class=\"text-cyan-300\">Kanban, Gantt, Burndown, EAP, calendário e capacidade</span> — na própria Tradvia ou dentro da ferramenta que seu time já usa.",
+    "hero.badge":"Plataforma Open-Core de AgentOps & Orquestração Híbrida","hero.stage":"Estágio inicial · construído em público",
+    "hero.title":"Orquestre Humanos, APIs Multimodelo e Sessões Isoladas em Container em um Único Plano de Controle.",
+    "hero.lead":"A Tradvia elimina o atrito entre a gestão de projetos e a execução autônoma. Vá além de prompts isolados: distribua tarefas em um Kanban híbrido, roteie cargas de trabalho entre pools de APIs de vários fabricantes e sessões autenticadas de navegador/CLI, acompanhe cada token e segundo de computação com FinOps em tempo real e alterne o controle entre agentes de IA e especialistas humanos sem perder contexto.",
     "hero.cta1":"Ver no GitHub","hero.cta2":"Quero acesso antecipado",
-    "prev.kicker":"Prévia interativa do conceito","prev.title":"Um projeto, seis formas de acompanhar",
-    "prev.note":"Dados simulados. Todas as visões são calculadas a partir das mesmas sete atividades, com as projeções que já estão implementadas na biblioteca do core. A interface web ainda não foi lançada.",
-    "v.kanban":"Kanban","v.gantt":"Gantt","v.burndown":"Burndown","v.wbs":"EAP","v.timeline":"Calendário","v.capacity":"Capacidade",
-    "q.kanban":"Em que etapa do fluxo está cada atividade agora?",
-    "q.gantt":"Quanto dura cada atividade, o que depende do quê e qual marco está em risco?",
-    "q.burndown":"O escopo da sprint será entregue no prazo?",
-    "q.wbs":"Como o escopo se decompõe em entregas?",
-    "q.timeline":"O que vence em cada data?",
-    "q.capacity":"Quem — pessoa ou agente — está sobrecarregado ou com pouca carga?",
-    "ctl.day":"Dia {n} de {total} · {date}","ctl.next":"Avançar um dia ▸","ctl.restart":"Reiniciar","ctl.end":"Sprint encerrada",
-    "gate.msg":"{id} está aguardando {who} no Slack. Os agentes não podem pular uma aprovação humana, então as atividades que dependem dela ficam bloqueadas.",
-    "gate.btn":"Aprovar como Ana",
-    "s.BACKLOG":"A fazer","s.AGENT_WORKING":"Em andamento","s.WAITING_HUMAN":"Aguardando uma pessoa","s.IN_REVIEW_PR":"Em revisão (PR)","s.DONE":"Concluído",
-    "lbl.blocked":"bloqueado por {ids}","lbl.paused":"pausado (parada de emergência)","lbl.today":"Hoje","lbl.ideal":"Ideal","lbl.remaining":"Restante",
-    "lbl.points":"story points","lbl.week":"Semana {n}","lbl.overloaded":"Sobrecarregado","lbl.agent":"agente","lbl.milestone":"Marco","lbl.late":"atrasado",
-    "lbl.capNote":"Horas planejadas por semana a partir das mesmas atividades, comparadas à capacidade de cada membro (Bruno trabalha meio período).",
-    "lbl.wbsNote":"O progresso é consolidado a partir do esforço das atividades concluídas.",
-    "i.P":"Checkout v2","i.P1":"Descoberta","i.P2":"Construção","i.P3":"Entrega","i.T1":"Levantar requisitos","i.T2":"Desenhar a API",
-    "i.T3":"Endpoints de pagamento","i.T4":"Telas do checkout","i.T5":"Regra de reembolso: parcial ou total?","i.T6":"Testes e revisão de código","i.M":"Lançamento",
-    "fin.title":"Telemetria FinOps","fin.spend":"Gasto da sprint","fin.saved":"Economia de cache","fin.agents":"Agentes ativos",
-    "fin.active":"ativos","kill.on":"Parada de emergência","kill.off":"Agentes parados — retomar",
-    "arch.title":"Os quatro pilares da arquitetura","arch.lead":"Cada pilar mostra seu status real, para você saber o que já funciona hoje e o que ainda está no papel.",
-    "st.planned":"Planejado · v0.2+","st.progress":"Em andamento · v0.1","st.partial":"Parcial · v0.1",
-    "p1.t":"Transparência em múltiplas visões","p1.d":"Um modelo neutro de atividade e seis projeções — Kanban, Gantt, Burndown, EAP, calendário e capacidade — implementadas e testadas na biblioteca do core. As visões web vêm em seguida.",
-    "p2.t":"Orquestração com humano no circuito","p2.d":"Um fluxo LangGraph em que os agentes planejam e executam atividades e param para a decisão de uma pessoa no chat antes de qualquer entrega, como abrir um pull request.",
-    "p3.t":"FinOps cognitivo","p3.d":"Roteamento com LiteLLM e custo registrado em cada atividade já hoje. Limites de orçamento e um livro-razão de tokens estão planejados.",
-    "p4.t":"Zero-trust e MCP","p4.d":"Segurança em nível de linha por cliente, uma sandbox descartável por tarefa e integrações por servidores Model Context Protocol. A v0.1 ainda fala com o GitHub pela API REST.",
-    "int.kicker":"Integrações","int.title":"Visões nativas ou a ferramenta que você já usa",
-    "int.lead":"Os conectores mapeiam as atividades e os status de cada ferramenta para o mesmo modelo de trabalho, então todas as visões funcionam sobre os quadros que você já tem. Todos seguem a mesma interface, o que faz de cada conector uma boa primeira contribuição.",
-    "int.native":"Visões nativas da Tradvia","int.nativeD":"Kanban · Gantt · Burndown · EAP · Calendário · Capacidade","int.planned":"Planejado",
+    "prev.kicker":"Prévia interativa do conceito","prev.title":"O quadro híbrido executável",
+    "prev.note":"Protótipo ilustrativo com dados simulados. Hoje a v0.1 entrega o runtime de APIs, a máquina de estado dos cards e as aprovações no chat; os workers de sessão, o pool de contas e o live takeover estão planejados.",
+    "prev.hint":"Clique em “Avançar” para mover um card. Quando um agente em sessão trava, assuma a sessão, resolva e devolva o controle. Os agentes não podem pular uma aprovação humana.",
+    "fin.title":"Token FinOps","fin.spend":"Gasto da sprint","fin.pool":"Pool de contas","fin.poolVal":"5 contas · 4 fabricantes","fin.saved":"Economia por destilação","fin.agents":"Agentes ativos",
+    "kill.on":"Parada por orçamento","kill.off":"Agentes parados — retomar",
+    "col.ready":"1. Pronto para despacho","col.exec":"2. Agente executando","col.human":"3. Aguardando um humano","col.humanSub":"Slack / WhatsApp · live takeover","col.review":"4. Revisão do PR e aprendizado",
+    "rt.api":"API","rt.browser":"Sessão de navegador","rt.cli":"Sessão de CLI",
+    "cost.tokens":"tokens","cost.compute":"computação",
+    "btn.adv":"Avançar →","btn.approve":"Aprovar e retomar →","btn.takeover":"Assumir a sessão →","card.distilled":"Aprendizado registrado ✓",
+    "blk.2fa":"Travado: código 2FA no portal do fornecedor","blk.arch":"Travado: migração de schema precisa de decisão de arquitetura","blk.gate":"Aprovação: regra de reembolso, parcial ou total?",
+    "c.12":"Migrar webhooks de cobrança para a v2","c.9":"Refatorar o módulo de autenticação e seus testes","c.7":"Exportar as notas do 3º trimestre do portal do fornecedor","c.4":"Corrigir teste de login instável",
+    "who.ask":"perguntou ao Anderson no Slack","who.askWa":"perguntou ao Anderson no WhatsApp","who.human":"Anderson está na sessão","who.pr":"PR aberto",
+    "tk.title":"Live takeover · {id} · sessão congelada para você","tk.handback":"Devolver o controle ao agente →",
+    "tk.stream":"Transmitindo o navegador via WebRTC","tk.mutex":"Mutex da sessão com o Anderson — o agente aguarda","tk.frozen":"Estado do agente salvo; ele retoma daqui",
+    "router.title":"Roteador","router.idle":"aguardando trabalho",
+    "router.ev1":"{id} → Anthropic · conta 1 (58% da cota de TPM)","router.ev2":"{id} → conta 2 da OpenAI perto da cota de RPM · roteado para Gemini · conta 1","router.ev3":"{id} → Ollama (local) · $0,00","router.ev4":"{id} → worker de sessão nº 3 · Firecracker MicroVM",
+    "arch.title":"Os seis pilares da arquitetura","arch.lead":"Cada pilar mostra seu status real, para você saber o que já funciona hoje e o que ainda está sendo construído.",
+    "st.shipped":"Entregue · v0.1","st.progress":"Em andamento · v0.1","st.partial":"Parcial · v0.1","st.planned":"Planejado · v0.2+",
+    "p1.t":"Execução Híbrida Dual-Runtime","p1.d":"Orquestre APIs de LLMs sem estado (OpenAI, Anthropic, Gemini, Ollama) lado a lado com containers com estado de CLI e navegador (Playwright/CDP), com controle de sessão (mutex lock) e persistência segura de autenticação. Hoje: APIs via LiteLLM; os workers de sessão vêm em seguida.",
+    "p2.t":"Pool Multicontas & Token FinOps","p2.d":"Reúna contas de vários fabricantes, distribua a carga dentro da cota de RPM/TPM de cada conta, faça fallback entre fabricantes quando um estiver saturado ou fora do ar e aplique circuit breakers de orçamento por card. Hoje: custo registrado em cada card.",
+    "p3.t":"Kanban Executável & Live Takeover","p3.d":"Cada card é uma máquina de estado durável. Pause fluxos para aprovação via Slack/WhatsApp ou assuma ao vivo o navegador ou o terminal do container para destravar o agente e devolver o controle. Hoje: máquina de estado e aprovação no chat.",
+    "p4.t":"Sandboxes Zero-Trust em MicroVMs","p4.d":"Isole cada execução e sessão autenticada em Firecracker MicroVMs efêmeras, protegidas por PostgreSQL Row-Level Security e cofres criptografados de credenciais e sessões.",
+    "p5.t":"MCP Nativo & AST GraphRAG","p5.d":"Conecte servidores MCP universais e reduza o consumo de tokens com indexação de código via AST e destilação de memória episódica, que se acumula com o tempo.",
+    "p6.t":"Arquitetura Open-Core Escalável","p6.d":"Rode o /core via Docker Compose ou escale com a edição /ee e o Cloud SaaS: pools de sessões em equipe, RBAC e governança corporativa de FinOps. Hoje: o monorepo /core + /ee, licenças e CI.",
+    "int.kicker":"Integrações","int.title":"Traga o trabalho de onde ele já está",
+    "int.lead":"Os conectores sincronizam cards e status das ferramentas de projeto que seu time já usa com a máquina de estado da Tradvia. Todos seguem a mesma interface, o que faz de cada conector uma boa primeira contribuição.",
+    "int.planned":"Planejado",
     "rm.title":"Roadmap","rm.done":"concluído","rm.prog":"em andamento","rm.plan":"planejado",
-    "rm.0t":"Fase 0 — Fundação","rm.0d":"Repositório open core, licenciamento, governança e o contrato de ciclo de vida das atividades.",
-    "rm.1t":"Fase 1 — Motor v0.1","rm.1d":"Orquestrador LangGraph, o modelo neutro de atividades com suas seis visões, roteamento com LiteLLM, integração com o GitHub e aprovação humana no chat.",
-    "rm.2t":"Fase 2 — Visões web e primeiros conectores","rm.2d":"As seis visões no navegador e os primeiros conectores (Jira e Trello), construídos em público com os agentes da v0.1.",
-    "rm.3t":"Fase 3 — Enterprise","rm.3d":"SSO e RBAC, WhatsApp e Teams, painéis de portfólio e ROI, e os demais conectores.",
-    "cta.title":"Procuramos contribuidores","cta.lead":"Buscamos os primeiros contribuidores em LangGraph, conectores para ferramentas de projeto, servidores MCP, visualização de dados e segurança de IA.","cta.btn":"Começar a contribuir",
+    "rm.0t":"Fase 0 — Fundação","rm.0d":"Monorepo open core (/core FSL, /ee comercial), CLA, CI e o contrato da máquina de estado dos cards.",
+    "rm.1t":"Fase 1 — Motor v0.1","rm.1d":"Orquestrador LangGraph, runtime de APIs com LiteLLM e custo por card, integração com o GitHub e aprovações no chat.",
+    "rm.2t":"Fase 2 — Workers de sessão e takeover","rm.2d":"Workers de navegador/CLI com estado em Firecracker MicroVMs com mutex de sessão, live takeover via WebRTC, pool multicontas com circuit breakers de orçamento, MCP e self-hosting com Docker Compose.",
+    "rm.3t":"Fase 3 — Enterprise e Cloud","rm.3d":"/ee e Cloud SaaS: pools de sessões em equipe, SSO e RBAC, WhatsApp e Teams, AST GraphRAG com destilação e governança corporativa de FinOps.",
+    "cta.title":"Procuramos contribuidores","cta.lead":"Buscamos os primeiros contribuidores em LangGraph, workers de sessão com Playwright/CDP, Firecracker, servidores MCP, FinOps e segurança de IA.","cta.btn":"Começar a contribuir",
     "ft.founded":"Tradvia · Fundada por Anderson dos Santos Dutra","ft.license":"Núcleo fair source (FSL-1.1-ALv2)"
   },
   es: {
-    "meta.title":"Tradvia — Orquestación Multiagente para la Ejecución de Proyectos",
-    "meta.desc":"Tradvia: open core en etapa temprana que orquesta agentes de IA y personas en la ejecución de proyectos, con el avance visible en Kanban, Gantt, Burndown, EDT, calendario y capacidad.",
+    "meta.title":"Tradvia — Plataforma Open-Core de AgentOps y Orquestación Híbrida",
+    "meta.desc":"Tradvia: plano de control open core en etapa temprana que orquesta personas, APIs multimodelo y sesiones aisladas en contenedores sobre un Kanban híbrido ejecutable, con Token FinOps en tiempo real.",
     "nav.preview":"Vista previa","nav.arch":"Arquitectura","nav.int":"Integraciones","nav.roadmap":"Hoja de ruta",
-    "hero.badge":"Open core en etapa temprana · construido en público",
-    "hero.title":"Personas y agentes de IA ejecutando el mismo proyecto, con el avance visible para todos.",
-    "hero.lead":"Tradvia es un orquestador multiagente para la ejecución de proyectos, con seguridad zero-trust. Agentes y personas comparten las mismas actividades, y cada acción queda visible en la notación que necesita cada público — <span class=\"text-cyan-300\">Kanban, Gantt, Burndown, EDT, calendario y capacidad</span> — en Tradvia o dentro de la herramienta que tu equipo ya usa.",
+    "hero.badge":"Plataforma Open-Core de AgentOps y Orquestación Híbrida","hero.stage":"Etapa temprana · construido en público",
+    "hero.title":"Orquesta Personas, APIs Multimodelo y Sesiones Aisladas en Contenedores en un Único Plano de Control.",
+    "hero.lead":"Tradvia elimina la fricción entre la gestión de proyectos y la ejecución autónoma. Ve más allá de los prompts aislados: distribuye tareas en un Kanban híbrido, enruta cargas de trabajo entre pools de APIs de varios proveedores y sesiones autenticadas de navegador/CLI, controla cada token y segundo de cómputo con FinOps en tiempo real y alterna el control entre agentes de IA e ingenieros humanos sin perder contexto.",
     "hero.cta1":"Ver en GitHub","hero.cta2":"Solicitar acceso anticipado",
-    "prev.kicker":"Vista previa interactiva del concepto","prev.title":"Un proyecto, seis formas de seguirlo",
-    "prev.note":"Datos simulados. Todas las vistas se calculan a partir de las mismas siete actividades, con las proyecciones ya implementadas en la biblioteca del core. La interfaz web aún no está publicada.",
-    "v.kanban":"Kanban","v.gantt":"Gantt","v.burndown":"Burndown","v.wbs":"EDT","v.timeline":"Calendario","v.capacity":"Capacidad",
-    "q.kanban":"¿En qué etapa del flujo está cada actividad ahora?",
-    "q.gantt":"¿Cuánto dura cada actividad, qué depende de qué y qué hito está en riesgo?",
-    "q.burndown":"¿Se entregará el alcance del sprint a tiempo?",
-    "q.wbs":"¿Cómo se descompone el alcance en entregables?",
-    "q.timeline":"¿Qué vence en cada fecha?",
-    "q.capacity":"¿Quién — persona o agente — está sobrecargado o con poca carga?",
-    "ctl.day":"Día {n} de {total} · {date}","ctl.next":"Avanzar un día ▸","ctl.restart":"Reiniciar","ctl.end":"Sprint terminado",
-    "gate.msg":"{id} está esperando a {who} en Slack. Los agentes no pueden saltarse una aprobación humana, así que las actividades que dependen de ella quedan bloqueadas.",
-    "gate.btn":"Aprobar como Ana",
-    "s.BACKLOG":"Por hacer","s.AGENT_WORKING":"En curso","s.WAITING_HUMAN":"Esperando a una persona","s.IN_REVIEW_PR":"En revisión (PR)","s.DONE":"Hecho",
-    "lbl.blocked":"bloqueado por {ids}","lbl.paused":"en pausa (parada de emergencia)","lbl.today":"Hoy","lbl.ideal":"Ideal","lbl.remaining":"Restante",
-    "lbl.points":"story points","lbl.week":"Semana {n}","lbl.overloaded":"Sobrecargado","lbl.agent":"agente","lbl.milestone":"Hito","lbl.late":"atrasado",
-    "lbl.capNote":"Horas planificadas por semana a partir de las mismas actividades, frente a la capacidad de cada miembro (Bruno trabaja media jornada).",
-    "lbl.wbsNote":"El progreso se consolida a partir del esfuerzo de las actividades terminadas.",
-    "i.P":"Checkout v2","i.P1":"Descubrimiento","i.P2":"Construcción","i.P3":"Entrega","i.T1":"Levantar requisitos","i.T2":"Diseñar la API",
-    "i.T3":"Endpoints de pago","i.T4":"Pantallas del checkout","i.T5":"Regla de reembolso: ¿parcial o total?","i.T6":"Pruebas y revisión de código","i.M":"Lanzamiento",
-    "fin.title":"Telemetría FinOps","fin.spend":"Gasto del sprint","fin.saved":"Ahorro de caché","fin.agents":"Agentes activos",
-    "fin.active":"activos","kill.on":"Parada de emergencia","kill.off":"Agentes detenidos — reanudar",
-    "arch.title":"Los cuatro pilares de la arquitectura","arch.lead":"Cada pilar muestra su estado real, para que sepas qué funciona hoy y qué sigue en diseño.",
-    "st.planned":"Planificado · v0.2+","st.progress":"En curso · v0.1","st.partial":"Parcial · v0.1",
-    "p1.t":"Transparencia en múltiples vistas","p1.d":"Un modelo neutro de actividad y seis proyecciones — Kanban, Gantt, Burndown, EDT, calendario y capacidad — implementadas y probadas en la biblioteca del core. Las vistas web vienen después.",
-    "p2.t":"Orquestación con humano en el circuito","p2.d":"Un flujo LangGraph en el que los agentes planifican y ejecutan actividades y se detienen para la decisión de una persona en el chat antes de cualquier entrega, como abrir un pull request.",
-    "p3.t":"FinOps cognitivo","p3.d":"Enrutamiento con LiteLLM y costo registrado en cada actividad desde hoy. Los límites de presupuesto y un registro de tokens están planificados.",
-    "p4.t":"Zero-trust y MCP","p4.d":"Seguridad a nivel de fila por cliente, un sandbox efímero por tarea e integraciones mediante servidores Model Context Protocol. La v0.1 todavía se comunica con GitHub mediante su API REST.",
-    "int.kicker":"Integraciones","int.title":"Vistas nativas o la herramienta que ya usas",
-    "int.lead":"Los conectores mapean las actividades y los estados de cada herramienta al mismo modelo de trabajo, así que todas las vistas funcionan sobre los tableros que ya tienes. Todos comparten la misma interfaz, lo que hace de cada conector una buena primera contribución.",
-    "int.native":"Vistas nativas de Tradvia","int.nativeD":"Kanban · Gantt · Burndown · EDT · Calendario · Capacidad","int.planned":"Planificado",
+    "prev.kicker":"Vista previa interactiva del concepto","prev.title":"El tablero híbrido ejecutable",
+    "prev.note":"Maqueta ilustrativa con datos simulados. Hoy la v0.1 incluye el runtime de APIs, la máquina de estados de las tarjetas y las aprobaciones en el chat; los workers de sesión, el pool de cuentas y el live takeover están planificados.",
+    "prev.hint":"Haz clic en “Avanzar” para mover una tarjeta. Cuando un agente en sesión se bloquea, toma la sesión, resuélvelo y devuelve el control. Los agentes no pueden saltarse una aprobación humana.",
+    "fin.title":"Token FinOps","fin.spend":"Gasto del sprint","fin.pool":"Pool de cuentas","fin.poolVal":"5 cuentas · 4 proveedores","fin.saved":"Ahorro por destilación","fin.agents":"Agentes activos",
+    "kill.on":"Parada por presupuesto","kill.off":"Agentes detenidos — reanudar",
+    "col.ready":"1. Listo para despacho","col.exec":"2. Agente ejecutando","col.human":"3. Esperando a una persona","col.humanSub":"Slack / WhatsApp · live takeover","col.review":"4. Revisión del PR y aprendizaje",
+    "rt.api":"API","rt.browser":"Sesión de navegador","rt.cli":"Sesión de CLI",
+    "cost.tokens":"tokens","cost.compute":"cómputo",
+    "btn.adv":"Avanzar →","btn.approve":"Aprobar y reanudar →","btn.takeover":"Tomar la sesión →","card.distilled":"Aprendizaje registrado ✓",
+    "blk.2fa":"Bloqueado: código 2FA en el portal del proveedor","blk.arch":"Bloqueado: la migración de esquema necesita una decisión de arquitectura","blk.gate":"Aprobación: regla de reembolso, ¿parcial o total?",
+    "c.12":"Migrar los webhooks de facturación a la v2","c.9":"Refactorizar el módulo de autenticación y sus pruebas","c.7":"Exportar las facturas del 3.er trimestre del portal del proveedor","c.4":"Corregir test de login inestable",
+    "who.ask":"le preguntó a Anderson en Slack","who.askWa":"le preguntó a Anderson en WhatsApp","who.human":"Anderson está en la sesión","who.pr":"PR abierto",
+    "tk.title":"Live takeover · {id} · sesión congelada para ti","tk.handback":"Devolver el control al agente →",
+    "tk.stream":"Transmitiendo el navegador por WebRTC","tk.mutex":"Mutex de la sesión en manos de Anderson — el agente espera","tk.frozen":"Estado del agente guardado; continúa desde aquí",
+    "router.title":"Enrutador","router.idle":"esperando trabajo",
+    "router.ev1":"{id} → Anthropic · cuenta 1 (58% de la cuota de TPM)","router.ev2":"{id} → cuenta 2 de OpenAI cerca de su cuota de RPM · enrutado a Gemini · cuenta 1","router.ev3":"{id} → Ollama (local) · $0,00","router.ev4":"{id} → worker de sesión n.º 3 · Firecracker MicroVM",
+    "arch.title":"Los seis pilares de la arquitectura","arch.lead":"Cada pilar muestra su estado real, para que sepas qué funciona hoy y qué se está construyendo.",
+    "st.shipped":"Entregado · v0.1","st.progress":"En curso · v0.1","st.partial":"Parcial · v0.1","st.planned":"Planificado · v0.2+",
+    "p1.t":"Ejecución Híbrida Dual-Runtime","p1.d":"Orquesta APIs de LLM sin estado (OpenAI, Anthropic, Gemini, Ollama) junto con contenedores con estado de CLI y navegador (Playwright/CDP), con bloqueo de sesión (mutex) y contextos de autenticación persistentes. Hoy: APIs mediante LiteLLM; los workers de sesión vienen después.",
+    "p2.t":"Pool Multicuenta y Token FinOps","p2.d":"Reúne cuentas de varios proveedores, distribuye la carga dentro de la cuota de RPM/TPM de cada cuenta, cambia de proveedor cuando uno está saturado o caído y aplica circuit breakers de presupuesto por tarjeta. Hoy: costo registrado en cada tarjeta.",
+    "p3.t":"Kanban Ejecutable y Live Takeover","p3.d":"Cada tarjeta es una máquina de estados duradera. Pausa en aprobaciones por Slack/WhatsApp o entra en vivo al navegador o al terminal del contenedor para desbloquear al agente y devolverle el control. Hoy: máquina de estados y aprobación en el chat.",
+    "p4.t":"Sandboxes Zero-Trust en MicroVMs","p4.d":"Aísla cada ejecución y sesión autenticada en Firecracker MicroVMs efímeras, respaldadas por PostgreSQL Row-Level Security y bóvedas cifradas de credenciales y sesiones.",
+    "p5.t":"MCP Nativo y AST GraphRAG","p5.d":"Conecta servidores MCP universales y reduce el consumo de tokens con indexación de código basada en AST y destilación de memoria episódica que se acumula con el tiempo.",
+    "p6.t":"Escalabilidad Open-Core","p6.d":"Autoaloja /core con Docker Compose o escala con /ee y el Cloud SaaS: pools de sesiones compartidos por equipo, RBAC y gobierno empresarial de FinOps. Hoy: el monorepo /core + /ee, licencias y CI.",
+    "int.kicker":"Integraciones","int.title":"Trae el trabajo desde donde ya está",
+    "int.lead":"Los conectores sincronizan tarjetas y estados de las herramientas de proyecto que tu equipo ya usa con la máquina de estados de Tradvia. Todos comparten la misma interfaz, lo que hace de cada conector una buena primera contribución.",
+    "int.planned":"Planificado",
     "rm.title":"Hoja de ruta","rm.done":"completado","rm.prog":"en curso","rm.plan":"planificado",
-    "rm.0t":"Fase 0 — Fundación","rm.0d":"Repositorio open core, licencias, gobernanza y el contrato de ciclo de vida de las actividades.",
-    "rm.1t":"Fase 1 — Motor v0.1","rm.1d":"Orquestador LangGraph, el modelo neutro de actividades con sus seis vistas, enrutamiento con LiteLLM, integración con GitHub y aprobación humana en el chat.",
-    "rm.2t":"Fase 2 — Vistas web y primeros conectores","rm.2d":"Las seis vistas en el navegador y los primeros conectores (Jira y Trello), construidos en público con los agentes de la v0.1.",
-    "rm.3t":"Fase 3 — Enterprise","rm.3d":"SSO y RBAC, WhatsApp y Teams, paneles de portafolio y ROI, y el resto de los conectores.",
-    "cta.title":"Buscamos colaboradores","cta.lead":"Buscamos los primeros colaboradores en LangGraph, conectores para herramientas de proyecto, servidores MCP, visualización de datos y seguridad de IA.","cta.btn":"Empezar a colaborar",
+    "rm.0t":"Fase 0 — Fundación","rm.0d":"Monorepo open core (/core FSL, /ee comercial), CLA, CI y el contrato de la máquina de estados de las tarjetas.",
+    "rm.1t":"Fase 1 — Motor v0.1","rm.1d":"Orquestador LangGraph, runtime de APIs con LiteLLM y costo por tarjeta, integración con GitHub y aprobaciones en el chat.",
+    "rm.2t":"Fase 2 — Workers de sesión y takeover","rm.2d":"Workers de navegador/CLI con estado en Firecracker MicroVMs con mutex de sesión, live takeover por WebRTC, pool multicuenta con circuit breakers de presupuesto, MCP y autoalojamiento con Docker Compose.",
+    "rm.3t":"Fase 3 — Enterprise y Cloud","rm.3d":"/ee y Cloud SaaS: pools de sesiones por equipo, SSO y RBAC, WhatsApp y Teams, AST GraphRAG con destilación y gobierno empresarial de FinOps.",
+    "cta.title":"Buscamos colaboradores","cta.lead":"Buscamos los primeros colaboradores en LangGraph, workers de sesión con Playwright/CDP, Firecracker, servidores MCP, FinOps y seguridad de IA.","cta.btn":"Empezar a colaborar",
     "ft.founded":"Tradvia · Fundada por Anderson dos Santos Dutra","ft.license":"Núcleo fair source (FSL-1.1-ALv2)"
   }
 };
@@ -305,239 +298,122 @@ const t = (k, vars) => {
   return s;
 };
 
-/* ---------- the same work model as core/src/tradvia/work ---------- */
-const START = new Date(2026, 9, 19);          // Monday
-const DAYS = 10;                               // two-week sprint, working days
-const dayDate = i => { const d = new Date(START); d.setDate(d.getDate() + Math.floor(i / 5) * 7 + (i % 5)); return d; };
-const PEOPLE = {
-  ana:{name:"Ana", kind:"human", cap:6},
-  bruno:{name:"Bruno", kind:"human", cap:4},
-  "architect-agent":{name:"@Agent-Architect", kind:"agent", cap:8},
-  "coder-agent":{name:"@Agent-Coder", kind:"agent", cap:8},
-  "reviewer-agent":{name:"@Agent-Reviewer", kind:"agent", cap:8},
-};
-// s/e = planned start/end (working-day index), h = hours, pts = story points
-const ITEMS = [
-  {id:"P"},
-  {id:"P1", parent:"P"},
-  {id:"T1", parent:"P1", who:"ana", s:0, e:1, h:8, pts:3, deps:[]},
-  {id:"T2", parent:"P1", who:"architect-agent", s:2, e:3, h:6, pts:3, deps:["T1"]},
-  {id:"P2", parent:"P"},
-  {id:"T3", parent:"P2", who:"coder-agent", s:4, e:7, h:24, pts:8, deps:["T2"]},
-  {id:"T4", parent:"P2", who:"bruno", s:4, e:7, h:32, pts:5, deps:["T2"]},
-  {id:"T5", parent:"P2", who:"ana", s:5, e:5, h:2, pts:2, deps:[], gate:true},
-  {id:"P3", parent:"P"},
-  {id:"T6", parent:"P3", who:"reviewer-agent", s:8, e:9, h:10, pts:3, deps:["T3","T4","T5"]},
-  {id:"M", parent:"P3", s:9, e:9, h:0, pts:0, deps:["T6"], milestone:true},
+const PILLARS = [
+  {n:1, st:"partial"}, {n:2, st:"partial"}, {n:3, st:"progress"},
+  {n:4, st:"planned"}, {n:5, st:"planned"}, {n:6, st:"progress"},
 ];
-const byId = Object.fromEntries(ITEMS.map(i => [i.id, i]));
-const LEAVES = ITEMS.filter(i => !ITEMS.some(c => c.parent === i.id));
-const TOTAL_PTS = LEAVES.reduce((a, i) => a + i.pts, 0);
-const ST = {
-  BACKLOG:{bar:"bg-slate-500/60", chip:"bg-slate-500/15 text-slate-300", col:"border-slate-500/40"},
-  AGENT_WORKING:{bar:"bg-cyan-400", chip:"bg-cyan-400/15 text-cyan-300", col:"border-cyan-400/50"},
-  WAITING_HUMAN:{bar:"bg-amber-400", chip:"bg-amber-400/15 text-amber-300", col:"border-amber-400/50"},
-  IN_REVIEW_PR:{bar:"bg-violet-400", chip:"bg-violet-400/15 text-violet-300", col:"border-violet-400/50"},
-  DONE:{bar:"bg-emerald-400", chip:"bg-emerald-400/15 text-emerald-300", col:"border-emerald-400/50"},
+const BADGE = {
+  shipped:"bg-emerald-400/10 text-emerald-300", progress:"bg-emerald-400/10 text-emerald-300",
+  partial:"bg-sky-400/10 text-sky-300", planned:"bg-amber-400/10 text-amber-300",
 };
-const STATUSES = Object.keys(ST);
-
-let day, st, killed = false, spend, saved;
-
-function reset(){
-  day = 0; spend = 41.20; saved = 18.75; killed = false;
-  st = Object.fromEntries(LEAVES.map(i => [i.id, {status:"BACKLOG", worked:0, doneDay:null, blocked:[], paused:false}]));
-  for (let d = 0; d <= 4; d++) { day = d; runDay(); }
-}
-
-function depsOpen(it, d){ return it.deps.filter(x => !(st[x].status === "DONE" && st[x].doneDay <= d)); }
-
-function runDay(){
-  for (const it of LEAVES) {
-    const s = st[it.id];
-    s.paused = false;
-    if (s.status === "DONE") continue;
-    const open = depsOpen(it, day - (it.milestone ? 0 : 1));
-    s.blocked = day >= it.s ? open : [];
-    if (day < it.s || open.length) { s.status = "BACKLOG"; continue; }
-    if (it.milestone) { s.status = "DONE"; s.doneDay = day; continue; }
-    if (it.gate) { s.status = "WAITING_HUMAN"; continue; }
-    const agent = PEOPLE[it.who].kind === "agent";
-    if (agent && killed) { s.paused = true; if (s.status === "BACKLOG") s.status = "AGENT_WORKING"; continue; }
-    s.worked++;
-    const dur = it.e - it.s + 1;
-    if (s.worked >= dur) { s.status = "DONE"; s.doneDay = day; }
-    else s.status = agent && s.worked === dur - 1 ? "IN_REVIEW_PR" : "AGENT_WORKING";
-    if (agent) { const add = +(Math.random() * 0.9 + 0.2).toFixed(2); spend += add; saved += +(add * 0.4).toFixed(2); }
-  }
-}
-
-function approve(){
-  const g = st.T5;
-  if (g.status !== "WAITING_HUMAN") return;
-  g.status = "DONE"; g.doneDay = day;
-  renderAll();
-}
-
-/* ---------- views (pure projections of ITEMS + state) ---------- */
-const title = it => t("i." + it.id);
-const fmt = (d, o) => new Intl.DateTimeFormat(lang, o).format(d);
-const who = it => it.who ? PEOPLE[it.who].name : "";
-const agentBadge = it => it.who && PEOPLE[it.who].kind === "agent" ? `<span class="ml-1 rounded bg-cyan-400/10 px-1 text-[10px] text-cyan-300">${t("lbl.agent")}</span>` : "";
-const note = it => {
-  const s = st[it.id];
-  if (s.paused) return `<span class="text-red-300">${t("lbl.paused")}</span>`;
-  if (s.blocked.length) return `<span class="text-red-300">${t("lbl.blocked", {ids: s.blocked.join(", ")})}</span>`;
-  if (s.status !== "DONE" && day > it.e) return `<span class="text-red-300">${t("lbl.late")}</span>`;
-  return "";
+const RT = {
+  api:{key:"rt.api", cls:"bg-cyan-400/10 text-cyan-300"},
+  browser:{key:"rt.browser", cls:"bg-violet-400/10 text-violet-300"},
+  cli:{key:"rt.cli", cls:"bg-fuchsia-400/10 text-fuchsia-300"},
 };
+const columns = [
+  {id:"ready", key:"col.ready", tone:"border-slate-500/40"},
+  {id:"exec", key:"col.exec", tone:"border-cyan-400/50"},
+  {id:"human", key:"col.human", sub:"col.humanSub", tone:"border-amber-400/50"},
+  {id:"review", key:"col.review", tone:"border-emerald-400/50"},
+];
+const order = columns.map(c => c.id);
+const INITIAL = () => [
+  {id:"TRD-12", key:"c.12", rt:"api", model:"Claude", col:"ready", who:"@Agent-Architect", tokens:0, compute:0, blk:"blk.gate"},
+  {id:"TRD-9", key:"c.9", rt:"cli", model:"MicroVM #2", col:"exec", who:"@Agent-Coder", tokens:1.12, compute:0.31, blk:"blk.arch"},
+  {id:"TRD-7", key:"c.7", rt:"browser", model:"Playwright", col:"human", who:"who.askWa", tokens:0.41, compute:0.22, blk:"blk.2fa"},
+  {id:"TRD-4", key:"c.4", rt:"api", model:"GPT", col:"review", who:"@Agent-Reviewer · {pr}", tokens:0.37, compute:0},
+];
+let cards = INITIAL(), killed = false, spend = 41.20, saved = 18.75, taking = null, routerEv = null;
+const isSession = k => k.rt !== "api";
+const cost = k => k.tokens + k.compute;
+const whoText = w => w.startsWith("who.") ? t(w) : w.replace("{pr}", t("who.pr"));
+const router = () => routerEv ? t(routerEv.key, {id: routerEv.id}) : t("router.idle");
 
-function vKanban(){
-  return `<div class="grid gap-3 md:grid-cols-5">${STATUSES.map(S => `
-    <div class="rounded-xl border ${ST[S].col} bg-white/[.02] p-3 min-h-[180px]">
-      <h3 class="text-sm font-semibold text-white">${t("s." + S)}</h3>
-      <div class="mt-3 space-y-2">${LEAVES.filter(i => st[i.id].status === S).map(i => `
-        <div class="rounded-lg border border-white/10 bg-[#0F1629] p-2.5">
-          <div class="flex justify-between text-xs"><span class="font-mono text-cyan-300">${i.milestone ? "◆ " : ""}${i.id}</span><span class="text-slate-500">${i.pts ? i.pts + " pts" : ""}</span></div>
-          <p class="mt-1 text-sm text-white">${title(i)}</p>
-          <p class="mt-1 text-xs text-slate-400">${who(i)}${agentBadge(i)}</p>
-          <p class="text-xs">${note(i)}</p>
-          ${S === "WAITING_HUMAN" ? `<button class="approve mt-2 text-xs font-semibold text-amber-300 hover:underline">${t("gate.btn")} →</button>` : ""}
-        </div>`).join("")}</div>
-    </div>`).join("")}</div>`;
+function render(){
+  const board = document.getElementById("board");
+  board.innerHTML = columns.map(c => `
+    <div class="rounded-xl border ${c.tone} bg-white/[.02] p-3 min-h-[230px]">
+      <h3 class="text-sm font-semibold text-white">${t(c.key)}</h3>
+      ${c.sub ? `<p class="text-xs text-amber-300/80">${t(c.sub)}</p>` : ""}
+      <div class="mt-3 space-y-3">
+        ${cards.filter(k => k.col === c.id).map(k => `
+          <div class="card rounded-lg border ${taking === k.id ? "border-amber-400/70" : "border-white/10"} bg-[#0F1629] p-3" data-id="${k.id}">
+            <div class="flex justify-between text-xs"><span class="font-mono text-cyan-300">${k.id}</span><span class="font-mono text-slate-400">$${cost(k).toFixed(2)}</span></div>
+            <p class="mt-1 text-sm text-white">${t(k.key)}</p>
+            <p class="mt-1.5 flex flex-wrap gap-1 text-[10px]"><span class="rounded px-1.5 py-0.5 ${RT[k.rt].cls}">${t(RT[k.rt].key)} · ${k.model}</span></p>
+            <p class="mt-1 text-[10px] font-mono text-slate-500">${t("cost.tokens")} $${k.tokens.toFixed(2)}${isSession(k) ? ` · ${t("cost.compute")} $${k.compute.toFixed(2)}` : ""}</p>
+            <p class="mt-1 text-xs text-slate-400">${taking === k.id ? t("who.human") : whoText(k.who)}</p>
+            ${k.col === "human" ? `<p class="mt-1 text-xs text-amber-200/90">${t(k.blk)}</p>` : ""}
+            ${k.col === "review" ? `<p class="mt-2 text-xs text-emerald-400">${t("card.distilled")}</p>` :
+              k.col === "human" ? (taking === k.id ? "" : `<button class="act mt-2 text-xs font-semibold text-amber-300 hover:underline disabled:opacity-40 disabled:no-underline" data-id="${k.id}" ${killed ? "disabled" : ""}>${isSession(k) ? t("btn.takeover") : t("btn.approve")}</button>`) :
+              `<button class="act mt-2 text-xs font-semibold text-cyan-300 hover:underline disabled:opacity-40 disabled:no-underline" data-id="${k.id}" ${killed ? "disabled" : ""}>${t("btn.adv")}</button>`}
+          </div>`).join("")}
+      </div>
+    </div>`).join("");
+  board.querySelectorAll(".act").forEach(b => b.addEventListener("click", () => act(b.dataset.id)));
+  renderTakeover();
+  document.getElementById("router").textContent = router();
 }
 
-function vGantt(){
-  const head = Array.from({length:DAYS}, (_, i) => `<div class="text-center ${i === day ? "text-cyan-300 font-semibold" : ""}">${fmt(dayDate(i), {day:"numeric"})}</div>`).join("");
-  const today = `<div class="absolute inset-y-0 w-px bg-cyan-300/70" style="left:${(day + .5) / DAYS * 100}%"></div>`;
-  const rows = LEAVES.map(i => {
-    const s = st[i.id], left = i.s / DAYS * 100, width = (i.e - i.s + 1) / DAYS * 100;
-    const bar = i.milestone
-      ? `<div class="absolute top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rotate-45 ${ST[s.status].bar}" style="left:${(i.s + .5) / DAYS * 100}%"></div>`
-      : `<div class="absolute top-1.5 bottom-1.5 rounded ${ST[s.status].bar} ${s.blocked.length || (s.status !== "DONE" && day > i.e) ? "ring-2 ring-red-400" : ""}" style="left:${left}%;width:${width}%"></div>`;
-    return `<div class="flex items-center gap-3 border-t border-white/5 py-1">
-      <div class="w-44 shrink-0 text-xs"><span class="font-mono text-cyan-300">${i.id}</span> <span class="text-white">${title(i)}</span><div class="text-slate-500">${i.deps.length ? "← " + i.deps.join(", ") : ""} ${note(i)}</div></div>
-      <div class="relative h-8 flex-1">${bar}${today}</div></div>`;
-  }).join("");
-  return `<div class="overflow-x-auto"><div class="min-w-[640px]">
-    <div class="flex gap-3 pb-1 text-xs text-slate-500"><div class="w-44 shrink-0"></div><div class="grid flex-1 grid-cols-10">${head}</div></div>
-    ${rows}</div></div>${legend()}`;
+function renderTakeover(){
+  const box = document.getElementById("takeover");
+  box.classList.toggle("hidden", !taking);
+  if (!taking) return;
+  const k = cards.find(c => c.id === taking);
+  document.getElementById("tk-title").textContent = t("tk.title", {id: k.id});
+  document.getElementById("tk-url").textContent = k.rt === "browser" ? "https://portal.supplier.example/verify" : "worker-2:~/app $ tradvia session attach";
+  document.getElementById("tk-blocker").textContent = t(k.blk);
 }
 
-function legend(){
-  return `<div class="mt-4 flex flex-wrap gap-3 text-xs text-slate-400">${STATUSES.map(S => `<span class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 rounded-sm ${ST[S].bar}"></span>${t("s." + S)}</span>`).join("")}
-    <span class="flex items-center gap-1.5"><span class="h-2.5 w-2.5 rotate-45 bg-slate-400"></span>${t("lbl.milestone")}</span></div>`;
+function charge(k){
+  const add = +(Math.random() * 0.9 + 0.2).toFixed(2);
+  if (isSession(k)) { k.compute += +(add * 0.4).toFixed(2); k.tokens += +(add * 0.6).toFixed(2); }
+  else k.tokens += add;
+  spend += add; saved += +(add * 0.4).toFixed(2);
 }
 
-function vBurndown(){
-  const W = 420, H = 220, L = 34, R = 10, T = 12, B = 30;
-  const x = i => L + i * (W - L - R) / (DAYS - 1), y = v => T + (1 - v / TOTAL_PTS) * (H - T - B);
-  const ideal = Array.from({length:DAYS}, (_, i) => `${x(i)},${y(TOTAL_PTS * (1 - i / (DAYS - 1)))}`).join(" ");
-  const rem = Array.from({length:day + 1}, (_, i) => {
-    const burned = LEAVES.filter(it => st[it.id].doneDay !== null && st[it.id].doneDay <= i).reduce((a, it) => a + it.pts, 0);
-    return [x(i), y(TOTAL_PTS - burned), TOTAL_PTS - burned];
-  });
-  const grid = [0, TOTAL_PTS / 2, TOTAL_PTS].map(v => `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="rgba(255,255,255,.08)"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end" fill="#64748b" font-size="10">${v}</text>`).join("");
-  const xl = Array.from({length:DAYS}, (_, i) => `<text x="${x(i)}" y="${H - 10}" text-anchor="middle" fill="${i === day ? "#67e8f9" : "#64748b"}" font-size="10">${fmt(dayDate(i), {day:"numeric"})}</text>`).join("");
-  const last = rem[rem.length - 1];
-  return `<div class="grid gap-6 md:grid-cols-[1fr_14rem] items-center">
-    <svg viewBox="0 0 ${W} ${H}" class="w-full max-h-72" role="img" aria-label="Burndown">${grid}${xl}
-      <polyline points="${ideal}" fill="none" stroke="#94a3b8" stroke-dasharray="4 4" stroke-width="1.5"/>
-      <polyline points="${rem.map(p => p[0] + "," + p[1]).join(" ")}" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
-      ${rem.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="#22d3ee"/>`).join("")}
-    </svg>
-    <div class="space-y-2 text-sm">
-      <p><span class="inline-block h-0.5 w-5 align-middle bg-slate-400"></span> ${t("lbl.ideal")}</p>
-      <p><span class="inline-block h-0.5 w-5 align-middle bg-cyan-400"></span> ${t("lbl.remaining")}: <b class="font-mono text-white">${last[2]}</b> / ${TOTAL_PTS} ${t("lbl.points")}</p>
-    </div></div>`;
+function act(id){
+  const k = cards.find(c => c.id === id);
+  if (k.col === "human" && isSession(k)) { taking = k.id; render(); return; }
+  const el = document.querySelector(`.card[data-id="${id}"]`);
+  el && el.classList.add("moving");
+  setTimeout(() => {
+    if (k.col === "ready") { k.who = "@Agent-Coder"; routerEv = {id:k.id, key: k.rt === "api" ? ["router.ev1", "router.ev2", "router.ev3"][Math.floor(Math.random() * 3)] : "router.ev4"}; }
+    if (k.col === "exec") { k.who = k.rt === "api" ? "who.ask" : "who.askWa"; }
+    if (k.col === "human") { k.who = "@Agent-Reviewer · {pr}"; }
+    charge(k);
+    k.col = order[order.indexOf(k.col) + 1];
+    updateMeters(); render();
+  }, 250);
 }
 
-function vWbs(){
-  const kids = p => ITEMS.filter(i => (i.parent || null) === p);
-  const effort = it => { const k = kids(it.id); return k.length ? k.reduce((a, c) => a + effort(c), 0) : it.h; };
-  const doneEffort = it => { const k = kids(it.id); return k.length ? k.reduce((a, c) => a + doneEffort(c), 0) : (st[it.id].status === "DONE" ? it.h : 0); };
-  const rows = [];
-  const walk = (it, code, depth) => {
-    const e = effort(it), pr = e ? doneEffort(it) / e : (st[it.id] && st[it.id].status === "DONE" ? 1 : 0);
-    rows.push(`<div class="flex items-center gap-3 border-t border-white/5 py-2" style="padding-left:${depth * 1.25}rem">
-      <span class="w-12 shrink-0 font-mono text-xs text-cyan-300">${code}</span>
-      <span class="flex-1 text-sm ${depth === 0 ? "font-semibold text-white" : depth === 1 ? "text-white" : "text-slate-300"}">${it.milestone ? "◆ " : ""}${title(it)} <span class="text-xs text-slate-500">${e ? e + " h" : ""}</span></span>
-      <span class="hidden sm:block h-1.5 w-28 rounded bg-white/10"><span class="block h-1.5 rounded bg-emerald-400" style="width:${pr * 100}%"></span></span>
-      <span class="w-10 text-right font-mono text-xs">${Math.round(pr * 100)}%</span></div>`);
-    kids(it.id).forEach((c, n) => walk(c, code + "." + (n + 1), depth + 1));
-  };
-  kids(null).forEach((c, n) => walk(c, String(n + 1), 0));
-  return rows.join("") + `<p class="mt-3 text-xs text-slate-500">${t("lbl.wbsNote")}</p>`;
-}
-
-function vTimeline(){
-  const cell = i => {
-    const due = LEAVES.filter(it => it.e === i).map(it => {
-      const s = st[it.id], late = s.status !== "DONE" && day > it.e;
-      const cls = s.status === "DONE" ? "bg-emerald-400/15 text-emerald-300 line-through" : late ? "bg-red-400/15 text-red-300" : it.milestone ? "bg-amber-400/15 text-amber-200" : "bg-white/5 text-slate-200";
-      return `<li class="rounded px-1.5 py-0.5 text-xs ${cls}">${it.milestone ? "◆ " : ""}${it.id} · ${title(it)}</li>`;
-    }).join("");
-    return `<div class="min-h-[96px] rounded-lg border ${i === day ? "border-cyan-400/60 bg-cyan-400/5" : "border-white/10"} p-2">
-      <div class="flex justify-between text-xs"><span class="text-slate-500">${fmt(dayDate(i), {weekday:"short"})}</span><span class="${i === day ? "text-cyan-300 font-semibold" : "text-slate-400"}">${fmt(dayDate(i), {day:"numeric", month:"short"})}</span></div>
-      <ul class="mt-2 space-y-1">${due}</ul></div>`;
-  };
-  return `<div class="grid gap-2 grid-cols-1 sm:grid-cols-5">${Array.from({length:DAYS}, (_, i) => cell(i)).join("")}</div>`;
-}
-
-function vCapacity(){
-  const alloc = (p, w) => LEAVES.filter(i => i.who === p).reduce((a, i) => {
-    const per = i.h / (i.e - i.s + 1);
-    let n = 0; for (let d = i.s; d <= i.e; d++) if (Math.floor(d / 5) === w) n++;
-    return a + per * n;
-  }, 0);
-  const cellH = (p, w) => {
-    const a = alloc(p, w), cap = PEOPLE[p].cap * 5, u = a / cap, over = u > 1;
-    return `<div class="rounded-lg border ${over ? "border-red-400/50 bg-red-400/10" : "border-white/10"} p-2">
-      <div class="flex justify-between text-xs"><span class="font-mono ${over ? "text-red-300" : "text-white"}">${+a.toFixed(1)} / ${cap} h</span><span class="${over ? "text-red-300 font-semibold" : "text-slate-400"}">${Math.round(u * 100)}%</span></div>
-      <div class="mt-1.5 h-1.5 rounded bg-white/10"><div class="h-1.5 rounded ${over ? "bg-red-400" : "bg-cyan-400"}" style="width:${Math.min(100, u * 100)}%"></div></div>
-      ${over ? `<p class="mt-1 text-xs text-red-300">${t("lbl.overloaded")}</p>` : ""}</div>`;
-  };
-  return `<div class="overflow-x-auto"><div class="min-w-[520px] grid gap-2 items-center" style="grid-template-columns:11rem 1fr 1fr">
-    <div></div><div class="text-xs text-slate-500">${t("lbl.week", {n:1})}</div><div class="text-xs text-slate-500">${t("lbl.week", {n:2})}</div>
-    ${Object.keys(PEOPLE).map(p => `<div class="text-sm text-white">${PEOPLE[p].name}${PEOPLE[p].kind === "agent" ? `<span class="ml-1 rounded bg-cyan-400/10 px-1 text-[10px] text-cyan-300">${t("lbl.agent")}</span>` : ""}</div>${cellH(p, 0)}${cellH(p, 1)}`).join("")}
-  </div></div><p class="mt-3 text-xs text-slate-500">${t("lbl.capNote")}</p>`;
-}
-
-const VIEWS = {kanban:vKanban, gantt:vGantt, burndown:vBurndown, wbs:vWbs, timeline:vTimeline, capacity:vCapacity};
-let view = "kanban";
-
-function renderTabs(){
-  document.getElementById("tabs").innerHTML = Object.keys(VIEWS).map(v =>
-    `<button class="tab shrink-0 rounded-md border border-white/10 px-3 py-1.5 text-sm hover:text-white" role="tab" aria-selected="${v === view}" data-view="${v}">${t("v." + v)}</button>`).join("");
-  document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { view = b.dataset.view; renderAll(); }));
-}
-
-function renderAll(){
-  renderTabs();
-  document.getElementById("question").textContent = t("q." + view);
-  const el = document.getElementById("view");
-  el.innerHTML = `<div class="view-in">${VIEWS[view]()}</div>`;
-  el.querySelectorAll(".approve").forEach(b => b.addEventListener("click", approve));
-  document.getElementById("daylabel").textContent = t("ctl.day", {n:day + 1, total:DAYS, date:fmt(dayDate(day), {weekday:"short", day:"numeric", month:"short"})});
-  const nx = document.getElementById("next");
-  nx.disabled = day >= DAYS - 1; nx.textContent = nx.disabled ? t("ctl.end") : t("ctl.next");
-  const gate = document.getElementById("gate"), waiting = st.T5.status === "WAITING_HUMAN";
-  gate.classList.toggle("hidden", !waiting); gate.classList.toggle("flex", waiting);
-  document.getElementById("gatemsg").textContent = t("gate.msg", {id:"T5", who:"Ana"});
-  updateMeters();
+function handBack(){
+  const k = cards.find(c => c.id === taking);
+  taking = null;
+  k.who = "@Agent-Reviewer · {pr}"; routerEv = {id:k.id, key:"router.ev4"};
+  charge(k); k.col = "review";
+  updateMeters(); render();
 }
 
 function updateMeters(){
   document.getElementById("spend").textContent = "$" + spend.toFixed(2);
   document.getElementById("saved").textContent = "$" + saved.toFixed(2);
   document.getElementById("budget").style.width = Math.min(100, spend / 120 * 100).toFixed(0) + "%";
-  const active = killed ? 0 : LEAVES.filter(i => i.who && PEOPLE[i.who].kind === "agent" && ["AGENT_WORKING", "IN_REVIEW_PR"].includes(st[i.id].status)).length;
   const a = document.getElementById("agents");
-  a.textContent = active;
+  a.textContent = killed ? 0 : cards.filter(c => c.col === "exec").length + 1;
   a.className = "font-mono " + (killed ? "text-red-400" : "text-white");
   const kb = document.getElementById("kill");
   kb.textContent = killed ? t("kill.off") : t("kill.on");
   kb.setAttribute("aria-pressed", killed);
+}
+
+function renderPillars(){
+  document.getElementById("pillars").innerHTML = PILLARS.map(p => `
+    <article class="rounded-xl border border-white/10 p-6">
+      <div class="flex items-start justify-between gap-3"><h3 class="font-semibold text-white">${t("p" + p.n + ".t")}</h3><span class="shrink-0 rounded px-2 py-0.5 text-xs ${BADGE[p.st]}">${t("st." + p.st)}</span></div>
+      <p class="mt-3 text-sm text-slate-400">${t("p" + p.n + ".d")}</p>
+    </article>`).join("");
 }
 
 const TOOLS = ["Trello","Jira","ClickUp","Monday.com","Asana","Wrike","Smartsheet","Artia","Microsoft Planner","KanbanFlow","Airtable"];
@@ -546,14 +422,8 @@ function renderTools(){
     `<li class="flex items-center justify-between gap-2 rounded-lg border border-white/10 px-3 py-2.5"><span class="text-sm text-white">${n}</span><span class="shrink-0 rounded bg-amber-400/10 px-1.5 py-0.5 text-[10px] text-amber-300">${t("int.planned")}</span></li>`).join("");
 }
 
-document.getElementById("next").addEventListener("click", () => { if (day < DAYS - 1) { day++; runDay(); renderAll(); } });
-document.getElementById("restart").addEventListener("click", () => { reset(); renderAll(); });
-document.getElementById("kill").addEventListener("click", () => {
-  killed = !killed;
-  LEAVES.forEach(i => { if (i.who && PEOPLE[i.who].kind === "agent" && ["AGENT_WORKING", "IN_REVIEW_PR"].includes(st[i.id].status)) st[i.id].paused = killed; });
-  renderAll();
-});
-document.querySelector("#gate .approve").addEventListener("click", approve);
+document.getElementById("kill").addEventListener("click", () => { killed = !killed; updateMeters(); render(); });
+document.getElementById("handback").addEventListener("click", handBack);
 
 function setLang(l){
   lang = I18N[l] ? l : "en";
@@ -561,10 +431,9 @@ function setLang(l){
   document.title = t("meta.title");
   document.querySelector('meta[name="description"]').setAttribute("content", t("meta.desc"));
   document.querySelectorAll("[data-i18n]").forEach(el => { el.textContent = t(el.dataset.i18n); });
-  document.querySelectorAll("[data-i18n-html]").forEach(el => { el.innerHTML = t(el.dataset.i18nHtml); });
   document.querySelectorAll(".lang").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === lang));
   try { localStorage.setItem("tradvia-lang", lang); } catch(e) {}
-  renderTools(); renderAll();
+  renderPillars(); renderTools(); updateMeters(); render();
 }
 
 document.querySelectorAll(".lang").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
@@ -576,7 +445,6 @@ function initialLang(){
   const n = (navigator.language || "en").toLowerCase();
   return n.startsWith("pt") ? "pt-BR" : n.startsWith("es") ? "es" : "en";
 }
-reset();
 setLang(initialLang());
 </script>
 </body>
